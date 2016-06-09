@@ -20,27 +20,23 @@ Overview
     :target: https://readthedocs.org/projects/adwordspy
     :alt: Documentation Status
 
-.. |travis| image:: https://travis-ci.org/mihazelnik/adwordspy.svg?branch=master
+.. |travis| image:: https://travis-ci.org/MihaZelnik/adwordspy.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/MihaZelnik/adwordspy
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/mihazelnik/adwordspy?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/MihaZelnik/adwordspy
-
-.. |requires| image:: https://requires.io/github/mihazelnik/adwordspy/requirements.svg?branch=master
+.. |requires| image:: https://requires.io/github/MihaZelnik/adwordspy/requirements.svg?branch=master
     :alt: Requirements Status
     :target: https://requires.io/github/MihaZelnik/adwordspy/requirements/?branch=master
 
-.. |codecov| image:: https://codecov.io/github/mihazelnik/adwordspy/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/github/MihaZelnik/adwordspy/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/MihaZelnik/adwordspy
 
-.. |landscape| image:: https://landscape.io/github/mihazelnik/adwordspy/master/landscape.svg?style=flat
+.. |landscape| image:: https://landscape.io/github/MihaZelnik/adwordspy/master/landscape.svg?style=flat
     :target: https://landscape.io/github/MihaZelnik/adwordspy/master
     :alt: Code Quality Status
 
-.. |codeclimate| image:: https://codeclimate.com/github/mihazelnik/adwordspy/badges/gpa.svg
+.. |codeclimate| image:: https://codeclimate.com/github/MihaZelnik/adwordspy/badges/gpa.svg
    :target: https://codeclimate.com/github/MihaZelnik/adwordspy
    :alt: CodeClimate Quality Status
 

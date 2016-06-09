@@ -31,14 +31,14 @@ version = release = '0.1.0'
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/mihazelnik/adwordspy/issues/%s', '#'),
-    'pr': ('https://github.com/mihazelnik/adwordspy/pull/%s', 'PR #'),
+    'issue': ('https://github.com/MihaZelnik/adwordspy/issues/%s', '#'),
+    'pr': ('https://github.com/MihaZelnik/adwordspy/pull/%s', 'PR #'),
 }
 import sphinx_py3doc_enhanced_theme
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 html_theme_options = {
-    'githuburl': 'https://github.com/mihazelnik/adwordspy/'
+    'githuburl': 'https://github.com/MihaZelnik/adwordspy/'
 }
 
 html_use_smartypants = True

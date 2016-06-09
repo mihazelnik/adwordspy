@@ -1,7 +1,7 @@
 # This file exists so you can easily regenerate your project.
 #
 # `cookiepatcher` is a convenient shim around `cookiecutter`
-# for regenerating projects (it will generate a .cookiecutterrc 
+# for regenerating projects (it will generate a .cookiecutterrc
 # automatically for any template). To use it:
 #
 #    pip install cookiepatcher
@@ -29,7 +29,7 @@ default_context:
     distribution_name:         'adwordspy'
     email:                     'miha.zelnik@gmail.com'
     full_name:                 'Miha Zelnik'
-    github_username:           'mihazelnik'
+    github_username:           'MihaZelnik'
     landscape:                 'yes'
     package_name:              'adwordspy'
     project_name:              'Adwordspy'
