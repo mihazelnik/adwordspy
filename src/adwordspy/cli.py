@@ -53,4 +53,4 @@ def main(argv=sys.argv):
     else:
         print('OAuth 2.0 authorization successful!\n\n'
               'Your access token is:\n {}\n\nYour refresh token is:\n {}'.format(
-            credential.access_token, credential.refresh_token))
+                credential.access_token, credential.refresh_token))
