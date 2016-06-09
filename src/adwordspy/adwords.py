@@ -3,11 +3,13 @@ from __future__ import unicode_literals
 
 import time
 
-from datetime import datetime, timedelta
+from datetime import datetime
+from datetime import timedelta
 
 import suds
 
-from googleads import adwords, oauth2
+from googleads import adwords
+from googleads import oauth2
 
 
 class RetriesLimitException(Exception):
