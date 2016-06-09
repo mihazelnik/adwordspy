@@ -20,6 +20,7 @@ import sys
 
 from oauth2client import client
 
+
 def main(argv=sys.argv):
     """
         Retrieve and display the access and refresh token.
@@ -31,16 +32,16 @@ def main(argv=sys.argv):
     client_id = argv[1]
     client_secret = argv[2]
     flow = client.OAuth2WebServerFlow(
-      client_id=client_id,
-      client_secret=client_secret,
-      scope=['https://www.googleapis.com/auth/adwords'],
-      user_agent='Ads Python Client Library',
-      redirect_uri='urn:ietf:wg:oauth:2.0:oob')
+        client_id=client_id,
+        client_secret=client_secret,
+        scope=['https://www.googleapis.com/auth/adwords'],
+        user_agent='Ads Python Client Library',
+        redirect_uri='urn:ietf:wg:oauth:2.0:oob')
 
     authorize_url = flow.step1_get_authorize_url()
 
     print('Log into the Google Account you use to access your AdWords account'
-        'and go to the following URL: \n{}\n'.format(authorize_url))
+          'and go to the following URL: \n{}\n'.format(authorize_url))
     print('After approving the token enter the verification code (if specified).')
     code = input('Code: ').strip()
 
@@ -52,4 +53,4 @@ def main(argv=sys.argv):
     else:
         print('OAuth 2.0 authorization successful!\n\n'
               'Your access token is:\n {}\n\nYour refresh token is:\n {}'.format(
-              credential.access_token, credential.refresh_token))
+            credential.access_token, credential.refresh_token))
