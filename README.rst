@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |travis| requires|
+      - | |travis| |requires|
         | |codecov|
         | |landscape| |codeclimate|
     * - package

@@ -6,7 +6,7 @@ source =
 [run]
 branch = True
 source =
-    adwordspy
+    src/adwordspy
     tests
 parallel = true
 
