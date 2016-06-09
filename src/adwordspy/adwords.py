@@ -2,9 +2,10 @@
 from __future__ import unicode_literals
 
 import time
-import suds
 
 from datetime import datetime, timedelta
+
+import suds
 
 from googleads import adwords, oauth2
 
