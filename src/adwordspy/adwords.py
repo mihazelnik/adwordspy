@@ -44,7 +44,7 @@ class AdwordsAPI(object):
             self.developer_token,
             oauth2_client,
             'adwords-client',
-            self.account_id)
+            client_customer_id=self.account_id)
 
         return adwords_client
 
