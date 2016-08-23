@@ -19,7 +19,7 @@ class RetriesLimitException(Exception):
 
 class AdwordsAPI(object):
     def __init__(self, account_id, client_id, client_secret, refresh_token, developer_token,
-                 version='v201603', page_size=100, retries=3):
+                 version='v201607', page_size=100, retries=3):
         self.account_id = account_id
         self.client_id = client_id
         self.client_secret = client_secret
