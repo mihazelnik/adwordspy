@@ -36,7 +36,7 @@ def test_get_accounts(adwords_tokens_for_accounts):
     adwords = AdwordsAPI(*adwords_tokens_for_accounts)
     accounts = list(adwords.get_accounts())
 
-    assert len(accounts) == 2
+    assert len(accounts) == 1
 
     account = accounts[0]
     assert 'customerId' in account
@@ -49,7 +49,7 @@ def test_get_accounts__with_fields(adwords_tokens_for_accounts):
     adwords = AdwordsAPI(*adwords_tokens_for_accounts)
     accounts = list(adwords.get_accounts(fields=['CustomerId', 'Name']))
 
-    assert len(accounts) == 2
+    assert len(accounts) == 1
 
     account = accounts[0]
     assert 'customerId' in account
