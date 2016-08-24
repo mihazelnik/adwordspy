@@ -174,14 +174,14 @@ class AdwordsAPI(object):
             {
                 'field': 'CanManageClients',
                 'operator': 'EQUALS',
-                'values': True,
+                'values': False,
             }
         ]
 
         if filters:
             for f in filters:
                 pre_filters.append(f)
-            selector['predicates'] = pre_filters
+        selector['predicates'] = pre_filters
         return self.get_custom_service(name, selector)
 
     def get_campaigns(self, fields=None, filters=None):
