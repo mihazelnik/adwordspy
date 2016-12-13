@@ -3,9 +3,6 @@ from __future__ import unicode_literals
 
 import time
 
-from datetime import datetime
-from datetime import timedelta
-
 import suds
 
 from googleads import adwords
