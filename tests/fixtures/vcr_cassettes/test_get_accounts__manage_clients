@@ -14,16 +14,16 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAC/xzNTQuCMBgA4Lu/YuwcMSb0dVNRhMDCoVmXofNl6EJtCnNF/z3a9bk8Hw8hXAsB
-        88yXUcGA0QlhW9PjNuov74AmZ63olRhSPPJUN3lcrdRyBdW+PTB1y2QWxhZKKptSMPNK/WFsg7A3
-        YBP2lHFxx5t/AevUaZh55wJ/R4hjV/LFTuDeEGoNGnvfHwAAAP//AwBmqZR3lwAAAA==
+        H4sIAAAAAAAC/6rmUlBQSkxOTi0uji/Jz07NU1KwUlCqTDSy1HPO8q9yNDJOSjaoyvUxckxyy9FN
+        NAm39PQyzPIO1I1Izwk0zHO3KMwPTHL28LAMrEhydM5OjvAI8c8xsvQuyndyLnNOLdd1VdIBWZFa
+        UZBZlFocnwm2wNjMwAAsDLYyvqSyIBVsr1NqYlFqkRJXLQAAAP//AwAuFl+zlwAAAA==
     headers:
       Alt-Svc: ['quic=":443"; ma=2592000; v="35,34"']
       Cache-Control: ['no-cache, no-store, max-age=0, must-revalidate']
       Content-Disposition: [attachment; filename="json.txt"; filename*=UTF-8''json.txt]
       Content-Encoding: [gzip]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 13 Dec 2016 16:36:46 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:45 GMT']
       Expires: ['Mon, 01 Jan 1990 00:00:00 GMT']
       Pragma: [no-cache]
       Server: [ESF]
@@ -1771,8 +1771,8 @@ interactions:
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml]
-      Date: ['Tue, 13 Dec 2016 16:36:46 GMT']
-      Expires: ['Tue, 13 Dec 2016 16:36:46 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:45 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:36:45 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]
@@ -1801,17 +1801,20 @@ interactions:
       bG5zOnRucz0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMvY20vdjIwMTYw
       OSI+ZmFsc2U8L3RuczpwYXJ0aWFsRmFpbHVyZT48L3RuczpSZXF1ZXN0SGVhZGVyPjwvU09BUC1F
       TlY6SGVhZGVyPjxuczE6Qm9keT48bnMwOmdldD48bnMwOnNlcnZpY2VTZWxlY3Rvcj48bnMyOmZp
-      ZWxkcz5DdXN0b21lcklkPC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPk5hbWU8L25zMjpmaWVsZHM+
-      PG5zMjpwcmVkaWNhdGVzPjxuczI6ZmllbGQ+Q2FuTWFuYWdlQ2xpZW50czwvbnMyOmZpZWxkPjxu
-      czI6b3BlcmF0b3I+RVFVQUxTPC9uczI6b3BlcmF0b3I+PG5zMjp2YWx1ZXM+RmFsc2U8L25zMjp2
-      YWx1ZXM+PC9uczI6cHJlZGljYXRlcz48bnMyOnBhZ2luZz48bnMyOnN0YXJ0SW5kZXg+MDwvbnMy
-      OnN0YXJ0SW5kZXg+PG5zMjpudW1iZXJSZXN1bHRzPjEwMDwvbnMyOm51bWJlclJlc3VsdHM+PC9u
-      czI6cGFnaW5nPjwvbnMwOnNlcnZpY2VTZWxlY3Rvcj48L25zMDpnZXQ+PC9uczE6Qm9keT48L1NP
-      QVAtRU5WOkVudmVsb3BlPg==
+      ZWxkcz5OYW1lPC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkN1c3RvbWVySWQ8L25zMjpmaWVsZHM+
+      PG5zMjpmaWVsZHM+Q2FuTWFuYWdlQ2xpZW50czwvbnMyOmZpZWxkcz48bnMyOmZpZWxkcz5DdXJy
+      ZW5jeUNvZGU8L25zMjpmaWVsZHM+PG5zMjpmaWVsZHM+RGF0ZVRpbWVab25lPC9uczI6ZmllbGRz
+      PjxuczI6ZmllbGRzPlRlc3RBY2NvdW50PC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkFjY291bnRM
+      YWJlbHM8L25zMjpmaWVsZHM+PG5zMjpwcmVkaWNhdGVzPjxuczI6ZmllbGQ+Q2FuTWFuYWdlQ2xp
+      ZW50czwvbnMyOmZpZWxkPjxuczI6b3BlcmF0b3I+RVFVQUxTPC9uczI6b3BlcmF0b3I+PG5zMjp2
+      YWx1ZXM+VHJ1ZTwvbnMyOnZhbHVlcz48L25zMjpwcmVkaWNhdGVzPjxuczI6cGFnaW5nPjxuczI6
+      c3RhcnRJbmRleD4wPC9uczI6c3RhcnRJbmRleD48bnMyOm51bWJlclJlc3VsdHM+MTAwPC9uczI6
+      bnVtYmVyUmVzdWx0cz48L25zMjpwYWdpbmc+PC9uczA6c2VydmljZVNlbGVjdG9yPjwvbnMwOmdl
+      dD48L25zMTpCb2R5PjwvU09BUC1FTlY6RW52ZWxvcGU+
     headers:
-      Authorization: [Bearer ya29.CjOzA2FKrk2P0w0UZRHrbREXx2y_keX7d8SkWNgNBEyeV2gbVcSwqH3nodABjweyFSlgEUY]
+      Authorization: [Bearer ya29.CjOzA23bc0zmL2AbFl-a4W9IJ1jKQ-XglQ1nG8qoQbCHH9QxbACkcXHTOl29KroBCvCew-E]
       Connection: [close]
-      Content-Length: ['1498']
+      Content-Length: ['1686']
       Content-Type: [text/xml; charset=utf-8]
       Host: [adwords.google.com]
       Soapaction:
@@ -1822,17 +1825,16 @@ interactions:
     uri: https://adwords.google.com/api/adwords/mcm/v201609/ManagedCustomerService
   response:
     body: {string: '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><ns2:ResponseHeader
-        xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609" xmlns="https://adwords.google.com/api/adwords/cm/v201609"><requestId>0005438cd38e40d80ac2744a4d0e8b8f</requestId><serviceName>ManagedCustomerService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>258</responseTime></ns2:ResponseHeader></soap:Header><soap:Body><ns2:getResponse
-        xmlns="https://adwords.google.com/api/adwords/cm/v201609" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609"><ns2:rval><totalNumEntries>1</totalNumEntries><Page.Type>ManagedCustomerPage</Page.Type><ns2:entries><ns2:name>account
-        #1</ns2:name><ns2:customerId>4100156312</ns2:customerId></ns2:entries><ns2:links><ns2:managerCustomerId>3402321073</ns2:managerCustomerId><ns2:clientCustomerId>4100156312</ns2:clientCustomerId><ns2:isHidden>false</ns2:isHidden></ns2:links></ns2:rval></ns2:getResponse></soap:Body></soap:Envelope>'}
+        xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609" xmlns="https://adwords.google.com/api/adwords/cm/v201609"><requestId>0005438cd37876b80ac2bec7bc0b9af5</requestId><serviceName>ManagedCustomerService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>328</responseTime></ns2:ResponseHeader></soap:Header><soap:Body><ns2:getResponse
+        xmlns="https://adwords.google.com/api/adwords/cm/v201609" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609"><ns2:rval><totalNumEntries>1</totalNumEntries><Page.Type>ManagedCustomerPage</Page.Type><ns2:entries><ns2:name>TEST</ns2:name><ns2:customerId>3402321073</ns2:customerId><ns2:canManageClients>true</ns2:canManageClients><ns2:currencyCode>GBP</ns2:currencyCode><ns2:dateTimeZone>Etc/GMT</ns2:dateTimeZone><ns2:testAccount>true</ns2:testAccount></ns2:entries></ns2:rval></ns2:getResponse></soap:Body></soap:Envelope>'}
     headers:
       Accept-Ranges: [none]
       Alt-Svc: [clear]
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml; charset=UTF-8]
-      Date: ['Tue, 13 Dec 2016 16:36:47 GMT']
-      Expires: ['Tue, 13 Dec 2016 16:36:47 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:46 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:36:46 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]

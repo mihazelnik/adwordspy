@@ -1,9 +1,9 @@
 interactions:
 - request:
     body: !!binary |
-      Z3JhbnRfdHlwZT1yZWZyZXNoX3Rva2VuJnJlZnJlc2hfdG9rZW49MSUyRnQzOW1yNXdTLXZBc0tD
-      eTRuWlBfa29veW41MUZkS3BlbkJWNkttVnI3SUlNRXVkVnJLNWpTcG9SMzB6Y1JGcTYmY2xpZW50
-      X3NlY3JldD1VVFR1M1VSZlNfZ19HZGplVUpsY2J4LU8mY2xpZW50X2lkPTY2ODg4NDQzNDQtZmlt
+      cmVmcmVzaF90b2tlbj0xJTJGdDM5bXI1d1MtdkFzS0N5NG5aUF9rb295bjUxRmRLcGVuQlY2S21W
+      cjdJSU1FdWRWcks1alNwb1IzMHpjUkZxNiZjbGllbnRfc2VjcmV0PVVUVHUzVVJmU19nX0dkamVV
+      SmxjYngtTyZncmFudF90eXBlPXJlZnJlc2hfdG9rZW4mY2xpZW50X2lkPTY2ODg4NDQzNDQtZmlt
       YWNwdm1sYjE4YWU2NWZjNTA4YXBrdmdzbmlhMHQuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20=
     headers:
       accept-encoding: ['gzip, deflate']
@@ -14,20 +14,19 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAKrmUlBQSkxOTi0uji/Jz07NU1KwUlCqTDSy1HPO8vNyNDBPN8ksTU9zc3f0MQ8p
-        dXcqdDcs9HRJdw4oMTNICnEpyjfMqXQq9rUoM092KalKzShMSzYJjzQq8fHNN8pxyvNxVdIBWQE2
-        O76ksiAVbIFTamJRahFEKrWiILMotTg+E2y3sZmBAVctAAAA//8DAHNAGEKXAAAA
+        H4sIAAAAAAAC/6rmUlBQSkxOTi0uji/Jz07NU1KwUlCqTDSy1HPO8q9yLDc3ifD2iI/3SMowrvRK
+        9nd0S4v0StVN0zUKi0qOLCwpjbQo9nCvyinOd3Mv8PZIcso09ayyDExPrwj0yfU2TTTIV9IBWZFa
+        UZBZlFocnwm2wNjMwAAsDLYyvqSyIBVsr1NqYlFqkRJXLQAAAP//AwAuTZEilwAAAA==
     headers:
-      Alt-Svc: ['quic=":443"; ma=2592000; v="35,34,33,32,31,30"']
-      Alternate-Protocol: ['443:quic']
+      Alt-Svc: ['quic=":443"; ma=2592000; v="35,34"']
       Cache-Control: ['no-cache, no-store, max-age=0, must-revalidate']
       Content-Disposition: [attachment; filename="json.txt"; filename*=UTF-8''json.txt]
       Content-Encoding: [gzip]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 24 Aug 2016 10:15:39 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:48 GMT']
       Expires: ['Mon, 01 Jan 1990 00:00:00 GMT']
       Pragma: [no-cache]
-      Server: [GSE]
+      Server: [ESF]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
       X-XSS-Protection: [1; mode=block]
@@ -39,17 +38,17 @@ interactions:
       Host: [adwords.google.com]
       User-Agent: [Python-urllib/3.5]
     method: GET
-    uri: https://adwords.google.com/api/adwords/mcm/v201607/ManagedCustomerService?wsdl
+    uri: https://adwords.google.com/api/adwords/mcm/v201609/ManagedCustomerService?wsdl
   response:
     body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Generated file,\
         \ do not edit -->\n<!-- Copyright 2016 Google Inc. All Rights Reserved -->\n\
-        <wsdl:definitions\n  targetNamespace=\"https://adwords.google.com/api/adwords/mcm/v201607\"\
-        \n  xmlns:tns=\"https://adwords.google.com/api/adwords/mcm/v201607\"\n  xmlns:wsdl=\"\
+        <wsdl:definitions\n  targetNamespace=\"https://adwords.google.com/api/adwords/mcm/v201609\"\
+        \n  xmlns:tns=\"https://adwords.google.com/api/adwords/mcm/v201609\"\n  xmlns:wsdl=\"\
         http://schemas.xmlsoap.org/wsdl/\"\n  xmlns:wsdlsoap=\"http://schemas.xmlsoap.org/wsdl/soap/\"\
         \ xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n  <wsdl:types>\n    <schema\
         \ elementFormDefault=\"qualified\" jaxb:version=\"1.0\"\n      targetNamespace=\"\
-        https://adwords.google.com/api/adwords/cm/v201607\"\n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\
-        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201607\"\
+        https://adwords.google.com/api/adwords/cm/v201609\"\n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\
+        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201609\"\
         >\n      <complexType name=\"AuthenticationError\">\n        <annotation>\n\
         \          <documentation>\n            Errors returned when Authentication\
         \ failed.\n          </documentation>\n        </annotation>\n        <complexContent>\n\
@@ -476,20 +475,22 @@ interactions:
         1\" minOccurs=\"0\" name=\"dateRange\" type=\"tns:DateRange\">\n         \
         \   <annotation>\n              <documentation>\n                Range of\
         \ dates for which you want to include data. If this value is omitted,\n  \
-        \              results for all dates are returned.\n                &lt;span\
-        \ class=\"constraint DateRangeWithinRange\"&gt;This range must be contained\
-        \ within the range [19700101, 20380101].&lt;/span&gt;\n              </documentation>\n\
+        \              results for all dates are returned.\n                &lt;p\
+        \ class=\"note\"&gt;&lt;b&gt;Note:&lt;/b&gt; This field is only used by the\
+        \ report download\n                service. For all other services, it is\
+        \ ignored.&lt;/p&gt;\n                &lt;span class=\"constraint DateRangeWithinRange\"\
+        &gt;This range must be contained within the range [19700101, 20380101].&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"unbounded\" minOccurs=\"0\" name=\"ordering\"\
+        \ type=\"tns:OrderBy\">\n            <annotation>\n              <documentation>\n\
+        \                The fields on which you want to sort, and the sort order.\
+        \ The order in the list is\n                significant: The first element\
+        \ in the list indicates the primary sort order, the next\n               \
+        \ specifies the secondary sort order and so on.\n              </documentation>\n\
         \            </annotation>\n          </element>\n          <element maxOccurs=\"\
-        unbounded\" minOccurs=\"0\" name=\"ordering\" type=\"tns:OrderBy\">\n    \
-        \        <annotation>\n              <documentation>\n                The\
-        \ fields on which you want to sort, and the sort order. The order in the list\
-        \ is\n                significant: The first element in the list indicates\
-        \ the primary sort order, the next\n                specifies the secondary\
-        \ sort order and so on.\n              </documentation>\n            </annotation>\n\
-        \          </element>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\
-        \ name=\"paging\" type=\"tns:Paging\">\n            <annotation>\n       \
-        \       <documentation>\n                Pagination information.\n       \
-        \       </documentation>\n            </annotation>\n          </element>\n\
+        1\" minOccurs=\"0\" name=\"paging\" type=\"tns:Paging\">\n            <annotation>\n\
+        \              <documentation>\n                Pagination information.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
         \        </sequence>\n      </complexType>\n      <complexType abstract=\"\
         true\" name=\"Operation\">\n        <annotation>\n          <documentation>\n\
         \            This represents an operation that includes an operator and an\
@@ -1069,10 +1070,10 @@ interactions:
         \        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
         TOO_SHORT\"/>\n          <enumeration value=\"TOO_LONG\"/>\n        </restriction>\n\
         \      </simpleType>\n    </schema>\n    <schema elementFormDefault=\"qualified\"\
-        \ jaxb:version=\"1.0\"\n      targetNamespace=\"https://adwords.google.com/api/adwords/mcm/v201607\"\
-        \n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\n      xmlns:cm=\"https://adwords.google.com/api/adwords/cm/v201607\"\
-        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/mcm/v201607\"\
-        >\n      <xsd:import namespace=\"https://adwords.google.com/api/adwords/cm/v201607\"\
+        \ jaxb:version=\"1.0\"\n      targetNamespace=\"https://adwords.google.com/api/adwords/mcm/v201609\"\
+        \n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\n      xmlns:cm=\"https://adwords.google.com/api/adwords/cm/v201609\"\
+        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/mcm/v201609\"\
+        >\n      <xsd:import namespace=\"https://adwords.google.com/api/adwords/cm/v201609\"\
         />\n      <annotation>\n        <appinfo>\n          <jaxb:globalBindings\
         \ typesafeEnumMaxMembers=\"999999\"/>\n        </appinfo>\n      </annotation>\n\
         \      <complexType name=\"ManagedCustomerLabel\">\n        <annotation>\n\
@@ -1251,21 +1252,12 @@ interactions:
         \ should not be {@code null} when it is contained within {@link Operator}s\
         \ : ADD.&lt;/span&gt;\n              </documentation>\n            </annotation>\n\
         \          </element>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\
-        \ name=\"companyName\" type=\"xsd:string\">\n            <annotation>\n  \
-        \            <documentation>\n                The company name of the account,\
-        \ if any.\n                &lt;span class=\"constraint Selectable\"&gt;This\
-        \ field can be selected using the value \"CompanyName\".&lt;/span&gt;&lt;span\
+        \ name=\"customerId\" type=\"xsd:long\">\n            <annotation>\n     \
+        \         <documentation>\n                The 10-digit ID that uniquely identifies\
+        \ the AdWords account.\n                &lt;span class=\"constraint Selectable\"\
+        &gt;This field can be selected using the value \"CustomerId\".&lt;/span&gt;&lt;span\
         \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
         \                &lt;span class=\"constraint ReadOnly\"&gt;This field is read\
-        \ only and will be ignored when sent to the API.&lt;/span&gt;\n          \
-        \    </documentation>\n            </annotation>\n          </element>\n \
-        \         <element maxOccurs=\"1\" minOccurs=\"0\" name=\"customerId\" type=\"\
-        xsd:long\">\n            <annotation>\n              <documentation>\n   \
-        \             The 10-digit ID that uniquely identifies the AdWords account.\n\
-        \                &lt;span class=\"constraint Selectable\"&gt;This field can\
-        \ be selected using the value \"CustomerId\".&lt;/span&gt;&lt;span class=\"\
-        constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n \
-        \               &lt;span class=\"constraint ReadOnly\"&gt;This field is read\
         \ only and will be ignored when sent to the API for the following {@link Operator}s:\
         \ ADD.&lt;/span&gt;\n              </documentation>\n            </annotation>\n\
         \          </element>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\
@@ -1771,7 +1763,7 @@ interactions:
         \ </wsdl:fault>\n    </wsdl:operation>\n  </wsdl:binding>\n  <wsdl:service\
         \ name=\"ManagedCustomerService\">\n    <wsdl:port binding=\"tns:ManagedCustomerServiceSoapBinding\"\
         \ name=\"ManagedCustomerServiceInterfacePort\">\n      <wsdlsoap:address location=\"\
-        https://adwords.google.com/api/adwords/mcm/v201607/ManagedCustomerService\"\
+        https://adwords.google.com/api/adwords/mcm/v201609/ManagedCustomerService\"\
         />\n    </wsdl:port>\n  </wsdl:service>\n</wsdl:definitions>\n"}
     headers:
       Accept-Ranges: [none]
@@ -1779,8 +1771,8 @@ interactions:
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml]
-      Date: ['Wed, 24 Aug 2016 10:15:39 GMT']
-      Expires: ['Wed, 24 Aug 2016 10:15:39 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:48 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:36:48 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]
@@ -1790,42 +1782,41 @@ interactions:
 - request:
     body: !!binary |
       PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUg
+      eG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1s
+      bnM6bnMxPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVsb3BlLyIgeG1sbnM6
+      dG5zPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNvbS9hcGkvYWR3b3Jkcy9tY20vdjIwMTYwOSIg
       eG1sbnM6bnMyPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNvbS9hcGkvYWR3b3Jkcy9jbS92MjAx
-      NjA3IiB4bWxuczpTT0FQLUVOVj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZl
-      bG9wZS8iIHhtbG5zOnRucz0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMv
-      bWNtL3YyMDE2MDciIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEt
-      aW5zdGFuY2UiIHhtbG5zOm5zMD0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZl
-      bG9wZS8iIHhtbG5zOm5zMT0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMv
-      bWNtL3YyMDE2MDciPjxTT0FQLUVOVjpIZWFkZXI+PHRuczpSZXF1ZXN0SGVhZGVyPjx0bnM6Y2xp
+      NjA5IiB4bWxuczpTT0FQLUVOVj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZl
+      bG9wZS8iIHhtbG5zOm5zMD0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMv
+      bWNtL3YyMDE2MDkiPjxTT0FQLUVOVjpIZWFkZXI+PHRuczpSZXF1ZXN0SGVhZGVyPjx0bnM6Y2xp
       ZW50Q3VzdG9tZXJJZCB4bWxuczp0bnM9Imh0dHBzOi8vYWR3b3Jkcy5nb29nbGUuY29tL2FwaS9h
-      ZHdvcmRzL2NtL3YyMDE2MDciPjM0MDIzMjEwNzM8L3RuczpjbGllbnRDdXN0b21lcklkPjx0bnM6
+      ZHdvcmRzL2NtL3YyMDE2MDkiPjM0MDIzMjEwNzM8L3RuczpjbGllbnRDdXN0b21lcklkPjx0bnM6
       ZGV2ZWxvcGVyVG9rZW4geG1sbnM6dG5zPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNvbS9hcGkv
-      YWR3b3Jkcy9jbS92MjAxNjA3Ij51RjdUSkc1b2EwYkQ5TThpZzJ2MlNnPC90bnM6ZGV2ZWxvcGVy
+      YWR3b3Jkcy9jbS92MjAxNjA5Ij51RjdUSkc1b2EwYkQ5TThpZzJ2MlNnPC90bnM6ZGV2ZWxvcGVy
       VG9rZW4+PHRuczp1c2VyQWdlbnQgeG1sbnM6dG5zPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNv
-      bS9hcGkvYWR3b3Jkcy9jbS92MjAxNjA3Ij5hZHdvcmRzLWNsaWVudCAoQXdBcGktUHl0aG9uLCBn
-      b29nbGVhZHMvNC4zLjAsIFB5dGhvbi8zLjUuMSk8L3Ruczp1c2VyQWdlbnQ+PHRuczp2YWxpZGF0
+      bS9hcGkvYWR3b3Jkcy9jbS92MjAxNjA5Ij5hZHdvcmRzLWNsaWVudCAoQXdBcGktUHl0aG9uLCBn
+      b29nbGVhZHMvNC44LjAsIFB5dGhvbi8zLjUuMSk8L3Ruczp1c2VyQWdlbnQ+PHRuczp2YWxpZGF0
       ZU9ubHkgeG1sbnM6dG5zPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNvbS9hcGkvYWR3b3Jkcy9j
-      bS92MjAxNjA3Ij5mYWxzZTwvdG5zOnZhbGlkYXRlT25seT48dG5zOnBhcnRpYWxGYWlsdXJlIHht
+      bS92MjAxNjA5Ij5mYWxzZTwvdG5zOnZhbGlkYXRlT25seT48dG5zOnBhcnRpYWxGYWlsdXJlIHht
       bG5zOnRucz0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMvY20vdjIwMTYw
-      NyI+ZmFsc2U8L3RuczpwYXJ0aWFsRmFpbHVyZT48L3RuczpSZXF1ZXN0SGVhZGVyPjwvU09BUC1F
-      TlY6SGVhZGVyPjxuczA6Qm9keT48bnMxOmdldD48bnMxOnNlcnZpY2VTZWxlY3Rvcj48bnMyOmZp
-      ZWxkcz5OYW1lPC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkNvbXBhbnlOYW1lPC9uczI6ZmllbGRz
-      PjxuczI6ZmllbGRzPkN1c3RvbWVySWQ8L25zMjpmaWVsZHM+PG5zMjpmaWVsZHM+Q2FuTWFuYWdl
-      Q2xpZW50czwvbnMyOmZpZWxkcz48bnMyOmZpZWxkcz5DdXJyZW5jeUNvZGU8L25zMjpmaWVsZHM+
-      PG5zMjpmaWVsZHM+RGF0ZVRpbWVab25lPC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPlRlc3RBY2Nv
-      dW50PC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkFjY291bnRMYWJlbHM8L25zMjpmaWVsZHM+PG5z
-      MjpwcmVkaWNhdGVzPjxuczI6ZmllbGQ+Q2FuTWFuYWdlQ2xpZW50czwvbnMyOmZpZWxkPjxuczI6
-      b3BlcmF0b3I+RVFVQUxTPC9uczI6b3BlcmF0b3I+PG5zMjp2YWx1ZXM+RmFsc2U8L25zMjp2YWx1
-      ZXM+PC9uczI6cHJlZGljYXRlcz48bnMyOnByZWRpY2F0ZXM+PG5zMjpmaWVsZD5DdXN0b21lcklk
-      PC9uczI6ZmllbGQ+PG5zMjpvcGVyYXRvcj5FUVVBTFM8L25zMjpvcGVyYXRvcj48bnMyOnZhbHVl
-      cz40MTAwMTU2MzEyPC9uczI6dmFsdWVzPjwvbnMyOnByZWRpY2F0ZXM+PG5zMjpwYWdpbmc+PG5z
-      MjpzdGFydEluZGV4PjA8L25zMjpzdGFydEluZGV4PjxuczI6bnVtYmVyUmVzdWx0cz4xMDA8L25z
-      MjpudW1iZXJSZXN1bHRzPjwvbnMyOnBhZ2luZz48L25zMTpzZXJ2aWNlU2VsZWN0b3I+PC9uczE6
-      Z2V0PjwvbnMwOkJvZHk+PC9TT0FQLUVOVjpFbnZlbG9wZT4=
+      OSI+ZmFsc2U8L3RuczpwYXJ0aWFsRmFpbHVyZT48L3RuczpSZXF1ZXN0SGVhZGVyPjwvU09BUC1F
+      TlY6SGVhZGVyPjxuczE6Qm9keT48bnMwOmdldD48bnMwOnNlcnZpY2VTZWxlY3Rvcj48bnMyOmZp
+      ZWxkcz5OYW1lPC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkN1c3RvbWVySWQ8L25zMjpmaWVsZHM+
+      PG5zMjpmaWVsZHM+Q2FuTWFuYWdlQ2xpZW50czwvbnMyOmZpZWxkcz48bnMyOmZpZWxkcz5DdXJy
+      ZW5jeUNvZGU8L25zMjpmaWVsZHM+PG5zMjpmaWVsZHM+RGF0ZVRpbWVab25lPC9uczI6ZmllbGRz
+      PjxuczI6ZmllbGRzPlRlc3RBY2NvdW50PC9uczI6ZmllbGRzPjxuczI6ZmllbGRzPkFjY291bnRM
+      YWJlbHM8L25zMjpmaWVsZHM+PG5zMjpwcmVkaWNhdGVzPjxuczI6ZmllbGQ+Q2FuTWFuYWdlQ2xp
+      ZW50czwvbnMyOmZpZWxkPjxuczI6b3BlcmF0b3I+RVFVQUxTPC9uczI6b3BlcmF0b3I+PG5zMjp2
+      YWx1ZXM+RmFsc2U8L25zMjp2YWx1ZXM+PC9uczI6cHJlZGljYXRlcz48bnMyOnByZWRpY2F0ZXM+
+      PG5zMjpmaWVsZD5DdXN0b21lcklkPC9uczI6ZmllbGQ+PG5zMjpvcGVyYXRvcj5FUVVBTFM8L25z
+      MjpvcGVyYXRvcj48bnMyOnZhbHVlcz40MTAwMTU2MzEyPC9uczI6dmFsdWVzPjwvbnMyOnByZWRp
+      Y2F0ZXM+PG5zMjpwYWdpbmc+PG5zMjpzdGFydEluZGV4PjA8L25zMjpzdGFydEluZGV4PjxuczI6
+      bnVtYmVyUmVzdWx0cz4xMDA8L25zMjpudW1iZXJSZXN1bHRzPjwvbnMyOnBhZ2luZz48L25zMDpz
+      ZXJ2aWNlU2VsZWN0b3I+PC9uczA6Z2V0PjwvbnMxOkJvZHk+PC9TT0FQLUVOVjpFbnZlbG9wZT4=
     headers:
-      Authorization: [Bearer ya29.CjNJA07g4iugfFGAL7TuGBqG1qIDgCPt60bTDro1lyBsM8v7cDtzehqfc4WY2tLMo2lBnLE]
+      Authorization: [Bearer ya29.CjOzAw74XKH__Hbh3yJcOAFfYJe-f-2VZcYqtuY8sHGzlsoFGpKHbBi5Iz9QggxQLmK5a0o]
       Connection: [close]
-      Content-Length: ['1859']
+      Content-Length: ['1823']
       Content-Type: [text/xml; charset=utf-8]
       Host: [adwords.google.com]
       Soapaction:
@@ -1833,20 +1824,20 @@ interactions:
         IiI=
       User-Agent: [Python-urllib/3.5]
     method: POST
-    uri: https://adwords.google.com/api/adwords/mcm/v201607/ManagedCustomerService
+    uri: https://adwords.google.com/api/adwords/mcm/v201609/ManagedCustomerService
   response:
     body: {string: '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><ns2:ResponseHeader
-        xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201607" xmlns="https://adwords.google.com/api/adwords/cm/v201607"><requestId>00053ace902ab0400ac252e39c0a4699</requestId><serviceName>ManagedCustomerService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>268</responseTime></ns2:ResponseHeader></soap:Header><soap:Body><ns2:getResponse
-        xmlns="https://adwords.google.com/api/adwords/cm/v201607" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201607"><ns2:rval><totalNumEntries>1</totalNumEntries><Page.Type>ManagedCustomerPage</Page.Type><ns2:entries><ns2:name>account
-        #1</ns2:name><ns2:companyName></ns2:companyName><ns2:customerId>4100156312</ns2:customerId><ns2:canManageClients>false</ns2:canManageClients><ns2:currencyCode>GBP</ns2:currencyCode><ns2:dateTimeZone>Etc/GMT</ns2:dateTimeZone><ns2:testAccount>true</ns2:testAccount></ns2:entries><ns2:links><ns2:managerCustomerId>3402321073</ns2:managerCustomerId><ns2:clientCustomerId>4100156312</ns2:clientCustomerId><ns2:isHidden>false</ns2:isHidden></ns2:links></ns2:rval></ns2:getResponse></soap:Body></soap:Envelope>'}
+        xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609" xmlns="https://adwords.google.com/api/adwords/cm/v201609"><requestId>0005438cd3a85c710ac24f4421057564</requestId><serviceName>ManagedCustomerService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>157</responseTime></ns2:ResponseHeader></soap:Header><soap:Body><ns2:getResponse
+        xmlns="https://adwords.google.com/api/adwords/cm/v201609" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201609"><ns2:rval><totalNumEntries>1</totalNumEntries><Page.Type>ManagedCustomerPage</Page.Type><ns2:entries><ns2:name>account
+        #1</ns2:name><ns2:customerId>4100156312</ns2:customerId><ns2:canManageClients>false</ns2:canManageClients><ns2:currencyCode>GBP</ns2:currencyCode><ns2:dateTimeZone>Etc/GMT</ns2:dateTimeZone><ns2:testAccount>true</ns2:testAccount></ns2:entries><ns2:links><ns2:managerCustomerId>3402321073</ns2:managerCustomerId><ns2:clientCustomerId>4100156312</ns2:clientCustomerId><ns2:isHidden>false</ns2:isHidden></ns2:links></ns2:rval></ns2:getResponse></soap:Body></soap:Envelope>'}
     headers:
       Accept-Ranges: [none]
       Alt-Svc: [clear]
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml; charset=UTF-8]
-      Date: ['Wed, 24 Aug 2016 10:15:40 GMT']
-      Expires: ['Wed, 24 Aug 2016 10:15:40 GMT']
+      Date: ['Tue, 13 Dec 2016 16:36:49 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:36:49 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]

@@ -1,9 +1,9 @@
 interactions:
 - request:
     body: !!binary |
-      Z3JhbnRfdHlwZT1yZWZyZXNoX3Rva2VuJnJlZnJlc2hfdG9rZW49MSUyRnQzOW1yNXdTLXZBc0tD
-      eTRuWlBfa29veW41MUZkS3BlbkJWNkttVnI3SUlNRXVkVnJLNWpTcG9SMzB6Y1JGcTYmY2xpZW50
-      X3NlY3JldD1VVFR1M1VSZlNfZ19HZGplVUpsY2J4LU8mY2xpZW50X2lkPTY2ODg4NDQzNDQtZmlt
+      cmVmcmVzaF90b2tlbj0xJTJGdDM5bXI1d1MtdkFzS0N5NG5aUF9rb295bjUxRmRLcGVuQlY2S21W
+      cjdJSU1FdWRWcks1alNwb1IzMHpjUkZxNiZjbGllbnRfc2VjcmV0PVVUVHUzVVJmU19nX0dkamVV
+      SmxjYngtTyZncmFudF90eXBlPXJlZnJlc2hfdG9rZW4mY2xpZW50X2lkPTY2ODg4NDQzNDQtZmlt
       YWNwdm1sYjE4YWU2NWZjNTA4YXBrdmdzbmlhMHQuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20=
     headers:
       accept-encoding: ['gzip, deflate']
@@ -14,20 +14,19 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAKrmUlBQSkxOTi0uji/Jz07NU1KwUlCqTDSy1HPO8vNyrKyMMHTPTg32KDUPSHfM
-        LSs29jS0dC31LnfMT/UxNCx1DHb2DTfPKc6uMgtwC7HQrUjxcw+JyA12jPTzDXFyTwwxUdIBWQE2
-        O76ksiAVbIFTamJRahFEKrWiILMotTg+E2y3sZmBAVctAAAA//8DABu7bXGXAAAA
+        H4sIAAAAAAAC/6rmUlBQSkxOTi0uji/Jz07NU1KwUlCqTDSy1HPO8q9yLI/0cs73S45KsSw2sswr
+        DvapTE2pdLOodPUJTtdNyi0wLk038yhIMUkrdnNK9rYICC0JNfWuSqmIMI0oNPLMyi70VdIBWZFa
+        UZBZlFocnwm2wNjMwAAsDLYyvqSyIBVsr1NqYlFqkRJXLQAAAP//AwArTUV6lwAAAA==
     headers:
-      Alt-Svc: ['quic=":443"; ma=2592000; v="35,34,33,32,31,30"']
-      Alternate-Protocol: ['443:quic']
+      Alt-Svc: ['quic=":443"; ma=2592000; v="35,34"']
       Cache-Control: ['no-cache, no-store, max-age=0, must-revalidate']
       Content-Disposition: [attachment; filename="json.txt"; filename*=UTF-8''json.txt]
       Content-Encoding: [gzip]
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 24 Aug 2016 10:15:52 GMT']
+      Date: ['Tue, 13 Dec 2016 16:37:00 GMT']
       Expires: ['Mon, 01 Jan 1990 00:00:00 GMT']
       Pragma: [no-cache]
-      Server: [GSE]
+      Server: [ESF]
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
       X-XSS-Protection: [1; mode=block]
@@ -39,17 +38,17 @@ interactions:
       Host: [adwords.google.com]
       User-Agent: [Python-urllib/3.5]
     method: GET
-    uri: https://adwords.google.com/api/adwords/cm/v201607/CampaignService?wsdl
+    uri: https://adwords.google.com/api/adwords/cm/v201609/CampaignService?wsdl
   response:
     body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- Generated file,\
         \ do not edit -->\n<!-- Copyright 2016 Google Inc. All Rights Reserved -->\n\
-        <wsdl:definitions\n  targetNamespace=\"https://adwords.google.com/api/adwords/cm/v201607\"\
-        \n  xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201607\"\n  xmlns:wsdl=\"\
+        <wsdl:definitions\n  targetNamespace=\"https://adwords.google.com/api/adwords/cm/v201609\"\
+        \n  xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201609\"\n  xmlns:wsdl=\"\
         http://schemas.xmlsoap.org/wsdl/\"\n  xmlns:wsdlsoap=\"http://schemas.xmlsoap.org/wsdl/soap/\"\
         \ xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n  <wsdl:types>\n    <schema\
         \ elementFormDefault=\"qualified\" jaxb:version=\"1.0\"\n      targetNamespace=\"\
-        https://adwords.google.com/api/adwords/cm/v201607\"\n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\
-        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201607\"\
+        https://adwords.google.com/api/adwords/cm/v201609\"\n      xmlns=\"http://www.w3.org/2001/XMLSchema\"\
+        \n      xmlns:jaxb=\"http://java.sun.com/xml/ns/jaxb\" xmlns:tns=\"https://adwords.google.com/api/adwords/cm/v201609\"\
         >\n      <annotation>\n        <appinfo>\n          <jaxb:globalBindings typesafeEnumMaxMembers=\"\
         999999\"/>\n        </appinfo>\n      </annotation>\n      <complexType name=\"\
         AdxError\">\n        <annotation>\n          <documentation>\n           \
@@ -203,8 +202,11 @@ interactions:
         \         <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"biddingStrategyType\"\
         \ type=\"tns:BiddingStrategyType\">\n            <annotation>\n          \
         \    <documentation>\n                The type of the bidding strategy to\
-        \ be attached.\n                &lt;span class=\"constraint Selectable\"&gt;This\
-        \ field can be selected using the value \"BiddingStrategyType\".&lt;/span&gt;&lt;span\
+        \ be attached.\n                \n                &lt;p&gt;For details on\
+        \ portfolio vs. standard availability, see the\n                &lt;a href=\"\
+        https://developers.google.com/adwords/api/docs/guides/bidding\"&gt;bidding\
+        \ guide&lt;/a&gt;.\n                &lt;span class=\"constraint Selectable\"\
+        &gt;This field can be selected using the value \"BiddingStrategyType\".&lt;/span&gt;&lt;span\
         \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
         \                &lt;span class=\"constraint CampaignType\"&gt;This field\
         \ may only be set to the values: MANUAL_CPC, ENHANCED_CPC, TARGET_ROAS, TARGET_SPEND\
@@ -218,8 +220,10 @@ interactions:
         &lt;span class=\"constraint CampaignType\"&gt;This field may only be set to\
         \ the values: BUDGET_OPTIMIZER, MANUAL_CPC, NONE, PAGE_ONE_PROMOTED, TARGET_CPA,\
         \ TARGET_OUTRANK_SHARE, TARGET_ROAS, TARGET_SPEND for campaign channel subtype\
-        \ SEARCH_MOBILE_APP.&lt;/span&gt;\n              </documentation>\n      \
-        \      </annotation>\n          </element>\n          <element maxOccurs=\"\
+        \ SEARCH_MOBILE_APP.&lt;/span&gt;\n&lt;span class=\"constraint CampaignType\"\
+        &gt;This field may only be set to TARGET_CPA for campaign channel subtype\
+        \ UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n              </documentation>\n \
+        \           </annotation>\n          </element>\n          <element maxOccurs=\"\
         1\" minOccurs=\"0\"\n            name=\"biddingStrategySource\" type=\"tns:BiddingStrategySource\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   Indicates where the bidding strategy is associated i.e. campaign, ad group\
@@ -231,7 +235,10 @@ interactions:
         \           <annotation>\n              <documentation>\n                The\
         \ bidding strategy metadata. Bidding strategy can be associated using the\n\
         \                {@linkplain BiddingStrategyConfiguration#biddingStrategyType}\
-        \ or the bidding scheme.\n              </documentation>\n            </annotation>\n\
+        \ or the bidding scheme.\n                \n                &lt;p&gt;For details\
+        \ on portfolio vs. standard availability, see the\n                &lt;a href=\"\
+        https://developers.google.com/adwords/api/docs/guides/bidding\"&gt;bidding\
+        \ guide&lt;/a&gt;.\n              </documentation>\n            </annotation>\n\
         \          </element>\n          <element maxOccurs=\"unbounded\" minOccurs=\"\
         0\" name=\"bids\" type=\"tns:Bids\">\n            <annotation>\n         \
         \     <documentation>\n                Specifies the bids. Bids can be set\
@@ -453,20 +460,22 @@ interactions:
         \            <documentation>\n                Ad serving optimization status.\n\
         \                &lt;span class=\"constraint Selectable\"&gt;This field can\
         \ be selected using the value \"AdServingOptimizationStatus\".&lt;/span&gt;\n\
+        \                &lt;span class=\"constraint CampaignType\"&gt;This field\
+        \ may only be set to CONVERSION_OPTIMIZE for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
         \              </documentation>\n            </annotation>\n          </element>\n\
         \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"frequencyCap\"\
         \ type=\"tns:FrequencyCap\">\n            <annotation>\n              <documentation>\n\
         \                Frequency cap for this campaign.\n                &lt;span\
         \ class=\"constraint CampaignType\"&gt;This field may not be set for campaign\
-        \ channel subtype SEARCH_MOBILE_APP.&lt;/span&gt;\n              </documentation>\n\
-        \            </annotation>\n          </element>\n          <element maxOccurs=\"\
-        unbounded\" minOccurs=\"0\" name=\"settings\" type=\"tns:Setting\">\n    \
-        \        <annotation>\n              <documentation>\n                List\
-        \ of settings for the campaign.\n                &lt;span class=\"constraint\
-        \ Selectable\"&gt;This field can be selected using the value \"Settings\"\
-        .&lt;/span&gt;\n              </documentation>\n            </annotation>\n\
-        \          </element>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\n\
-        \            name=\"advertisingChannelType\" type=\"tns:AdvertisingChannelType\"\
+        \ channel subtypes: UNIVERSAL_APP_CAMPAIGN, SEARCH_MOBILE_APP.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"unbounded\" minOccurs=\"0\" name=\"settings\"\
+        \ type=\"tns:Setting\">\n            <annotation>\n              <documentation>\n\
+        \                List of settings for the campaign.\n                &lt;span\
+        \ class=\"constraint Selectable\"&gt;This field can be selected using the\
+        \ value \"Settings\".&lt;/span&gt;\n              </documentation>\n     \
+        \       </annotation>\n          </element>\n          <element maxOccurs=\"\
+        1\" minOccurs=\"0\"\n            name=\"advertisingChannelType\" type=\"tns:AdvertisingChannelType\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   The primary serving target for ads within this campaign. The targeting\
         \ options can be refined\n                in NetworkSetting. May only be set\
@@ -554,6 +563,8 @@ interactions:
         \ field.\n                &lt;span class=\"constraint Selectable\"&gt;This\
         \ field can be selected using the value \"TrackingUrlTemplate\".&lt;/span&gt;&lt;span\
         \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
+        \                &lt;span class=\"constraint CampaignType\"&gt;This field\
+        \ may not be set for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
         \              </documentation>\n            </annotation>\n          </element>\n\
         \          <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"urlCustomParameters\"\
         \ type=\"tns:CustomParameters\">\n            <annotation>\n             \
@@ -561,11 +572,25 @@ interactions:
         \ URL custom parameter tags in the\n                trackingUrlTemplate, finalUrls,\
         \ and/or finalMobileUrls.\n                &lt;span class=\"constraint Selectable\"\
         &gt;This field can be selected using the value \"UrlCustomParameters\".&lt;/span&gt;\n\
+        \                &lt;span class=\"constraint CampaignType\"&gt;This field\
+        \ may not be set for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
         \              </documentation>\n            </annotation>\n          </element>\n\
         \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"vanityPharma\"\
         \ type=\"tns:VanityPharma\">\n            <annotation>\n              <documentation>\n\
         \                Describes how unbranded pharma ads will be displayed.\n \
-        \             </documentation>\n            </annotation>\n          </element>\n\
+        \               &lt;span class=\"constraint CampaignType\"&gt;This field may\
+        \ not be set for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"selectiveOptimization\"\
+        \ type=\"tns:SelectiveOptimization\">\n            <annotation>\n        \
+        \      <documentation>\n                Selective optimization setting for\
+        \ this campaign, which includes a set of conversion\n                types\
+        \ to optimize this campaign towards.\n                &lt;span class=\"constraint\
+        \ Selectable\"&gt;This field can be selected using the value \"SelectiveOptimization\"\
+        .&lt;/span&gt;\n                &lt;span class=\"constraint CampaignType\"\
+        &gt;This field may only be set for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
+        &lt;span class=\"constraint CampaignType\"&gt;This field may not be set.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
         \        </sequence>\n      </complexType>\n      <complexType name=\"CampaignError\"\
         >\n        <annotation>\n          <documentation>\n            Base error\
         \ class for Campaign Service.\n          </documentation>\n        </annotation>\n\
@@ -755,8 +780,8 @@ interactions:
         \          <extension base=\"tns:Bids\">\n            <sequence>\n       \
         \       <element maxOccurs=\"1\" minOccurs=\"0\" name=\"bid\" type=\"tns:Money\"\
         >\n                <annotation>\n                  <documentation>\n     \
-        \               Target cost per acquisition/conversion. This is applicable\
-        \ only at the ad group level.\n                    \n                    &lt;p&gt;If\
+        \               Target cost per acquisition (CPA). This is applicable only\
+        \ at the ad group level.\n                    \n                    &lt;p&gt;If\
         \ an ad group-level target is not set and the strategy type is TARGET_CPA,\n\
         \                    the strategy level target will be used. To set the strategy-level\
         \ target,\n                    set the {@linkplain TargetCpaBiddingScheme#targetCpa}\
@@ -1129,17 +1154,54 @@ interactions:
         \            Although this field is returned in the response, it is ignored\
         \ on input\n                and cannot be selected. Specify xsi:type instead.\n\
         \              </documentation>\n            </annotation>\n          </element>\n\
-        \        </sequence>\n      </complexType>\n      <complexType abstract=\"\
-        true\" name=\"ListReturnValue\">\n        <annotation>\n          <documentation>\n\
-        \            Base list return value type.\n          </documentation>\n  \
-        \      </annotation>\n        <sequence>\n          <element maxOccurs=\"\
-        1\" minOccurs=\"0\"\n            name=\"ListReturnValue.Type\" type=\"xsd:string\"\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"ListError\"\
+        >\n        <annotation>\n          <documentation>\n            Errors that\
+        \ can occur when making changes to a list using {@link ListOperations}.\n\
+        \          </documentation>\n        </annotation>\n        <complexContent>\n\
+        \          <extension base=\"tns:ApiError\">\n            <sequence>\n   \
+        \           <element maxOccurs=\"1\" minOccurs=\"0\" name=\"reason\" type=\"\
+        tns:ListError.Reason\">\n                <annotation>\n                  <documentation>\n\
+        \                    The error reason represented by an enum.\n          \
+        \        </documentation>\n                </annotation>\n              </element>\n\
+        \            </sequence>\n          </extension>\n        </complexContent>\n\
+        \      </complexType>\n      <complexType name=\"ListOperations\">\n     \
+        \   <annotation>\n          <documentation>\n            Describes the behavior\
+        \ of elements in a list. Instances of ListOperations will always be defined\n\
+        \            alongside some list in an API POJO. The number of operators in\
+        \ the ListOperations must be\n            equal to the number of elements\
+        \ in the POJO list. Each operator, together with its corresponding\n     \
+        \       list element, describe an intended change.\n            \n       \
+        \     &lt;p&gt;For example, if in a request Campaign.selectiveOptimization\
+        \ contains 2 conversionTypeIds,\n            and the conversionTypeIdsOps\
+        \ is non-null, it must contain 2 operators. If those operators are\n     \
+        \       {PUT, REMOVE} then the API will add the first conversionTypeId (if\
+        \ it doesn't\n            already exist) and remove the second conversionTypeId\
+        \ (if it exists).\n          </documentation>\n        </annotation>\n   \
+        \     <sequence>\n          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"\
+        clear\" type=\"xsd:boolean\">\n            <annotation>\n              <documentation>\n\
+        \                Indicates that all contents of the list should be deleted.\
+        \ If this is true, then operators\n                should be empty, or contain\
+        \ only PUTs.\n                \n                &lt;p&gt;REMOVE/UPDATE is\
+        \ invalid with clear, as once the clear is applied no elements would exist\
+        \ to\n                remove or update.\n              </documentation>\n\
+        \            </annotation>\n          </element>\n          <element maxOccurs=\"\
+        unbounded\" minOccurs=\"0\" name=\"operators\" type=\"tns:ListOperations.ListOperator\"\
         >\n            <annotation>\n              <documentation>\n             \
-        \   Indicates that this instance is a subtype of ListReturnValue.\n      \
-        \          Although this field is returned in the response, it is ignored\
-        \ on input\n                and cannot be selected. Specify xsi:type instead.\n\
-        \              </documentation>\n            </annotation>\n          </element>\n\
-        \        </sequence>\n      </complexType>\n      <complexType name=\"LongValue\"\
+        \   The desired behavior of each element in the POJO list that this ListOperation\
+        \ corresponds to.\n                This will contain the same number of elements\
+        \ as the corresponding List&lt;&gt;.\n              </documentation>\n   \
+        \         </annotation>\n          </element>\n        </sequence>\n     \
+        \ </complexType>\n      <complexType abstract=\"true\" name=\"ListReturnValue\"\
+        >\n        <annotation>\n          <documentation>\n            Base list\
+        \ return value type.\n          </documentation>\n        </annotation>\n\
+        \        <sequence>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\n\
+        \            name=\"ListReturnValue.Type\" type=\"xsd:string\">\n        \
+        \    <annotation>\n              <documentation>\n                Indicates\
+        \ that this instance is a subtype of ListReturnValue.\n                Although\
+        \ this field is returned in the response, it is ignored on input\n       \
+        \         and cannot be selected. Specify xsi:type instead.\n            \
+        \  </documentation>\n            </annotation>\n          </element>\n   \
+        \     </sequence>\n      </complexType>\n      <complexType name=\"LongValue\"\
         >\n        <annotation>\n          <documentation>\n            Number value\
         \ type for constructing long valued ranges.\n          </documentation>\n\
         \        </annotation>\n        <complexContent>\n          <extension base=\"\
@@ -1182,18 +1244,121 @@ interactions:
         \ Amount in micros. One million is equivalent to one unit.\n             \
         \     </documentation>\n                </annotation>\n              </element>\n\
         \            </sequence>\n          </extension>\n        </complexContent>\n\
-        \      </complexType>\n      <complexType name=\"NetworkSetting\">\n     \
-        \   <annotation>\n          <documentation>\n            Network settings\
-        \ for a Campaign.\n          </documentation>\n        </annotation>\n   \
-        \     <sequence>\n          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"\
-        targetGoogleSearch\" type=\"xsd:boolean\">\n            <annotation>\n   \
-        \           <documentation>\n                Ads will be served with Google.com\
-        \ search results.\n                &lt;span class=\"constraint Selectable\"\
-        &gt;This field can be selected using the value \"TargetGoogleSearch\".&lt;/span&gt;&lt;span\
-        \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
-        \                &lt;span class=\"constraint AdxEnabled\"&gt;This is disabled\
+        \      </complexType>\n      <complexType name=\"UniversalAppCampaignSetting\"\
+        >\n        <annotation>\n          <documentation>\n            Setting for\
+        \ storing the mobile app to advertise and creative assets for Universal app\
+        \ campaigns.\n            This setting is required for Campaigns with advertising\
+        \ channel subtype UNIVERSAL_APP_CAMPAIGN\n            and can only be attached\
+        \ to such Campaigns.\n          </documentation>\n        </annotation>\n\
+        \        <complexContent>\n          <extension base=\"tns:Setting\">\n  \
+        \          <sequence>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\" name=\"appId\" type=\"xsd:string\">\n                <annotation>\n  \
+        \                <documentation>\n                    A string that uniquely\
+        \ identifies a mobile application. The appId should be the same as the\n \
+        \                   vendor native id for the app. For example the Android\
+        \ Application \"Color Drips\"\n                    (https://play.google.com/store/apps/details?id=com.labpixies.colordrips)\
+        \ would have the appId -\n                    \"com.labpixies.colordrips\"\
+        .\n                    &lt;span class=\"constraint Filterable\"&gt;This field\
+        \ can be filtered on using the value \"UniversalAppCampaignSettingAppId\"\
+        .&lt;/span&gt;\n                    &lt;span class=\"constraint ReadOnly\"\
+        &gt;This field is read only and will be ignored when sent to the API for the\
+        \ following {@link Operator}s: REMOVE.&lt;/span&gt;\n                    &lt;span\
+        \ class=\"constraint Required\"&gt;This field is required and should not be\
+        \ {@code null} when it is contained within {@link Operator}s : ADD.&lt;/span&gt;\n\
+        \                  </documentation>\n                </annotation>\n     \
+        \         </element>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\" name=\"description1\" type=\"xsd:string\">\n                <annotation>\n\
+        \                  <documentation>\n                    A description line\
+        \ of your mobile application promotion ad(s).\n                    &lt;span\
+        \ class=\"constraint MatchesRegex\"&gt;Description must not contain any '{'\
+        \ or '}' characters. This is checked by the regular expression '[^\\{\\}]*'.&lt;/span&gt;\n\
+        \                    &lt;span class=\"constraint Required\"&gt;This field\
+        \ is required and should not be {@code null} when it is contained within {@link\
+        \ Operator}s : ADD.&lt;/span&gt;\n                    &lt;span class=\"constraint\
+        \ StringLength\"&gt;The length of this string should be between 1 and 25,\
+        \ inclusive, (trimmed).&lt;/span&gt;\n                  </documentation>\n\
+        \                </annotation>\n              </element>\n              <element\
+        \ maxOccurs=\"1\" minOccurs=\"0\" name=\"description2\" type=\"xsd:string\"\
+        >\n                <annotation>\n                  <documentation>\n     \
+        \               A description line of your mobile application promotion ad(s).\n\
+        \                    &lt;span class=\"constraint MatchesRegex\"&gt;Description\
+        \ must not contain any '{' or '}' characters. This is checked by the regular\
+        \ expression '[^\\{\\}]*'.&lt;/span&gt;\n                    &lt;span class=\"\
+        constraint Required\"&gt;This field is required and should not be {@code null}\
+        \ when it is contained within {@link Operator}s : ADD.&lt;/span&gt;\n    \
+        \                &lt;span class=\"constraint StringLength\"&gt;The length\
+        \ of this string should be between 1 and 25, inclusive, (trimmed).&lt;/span&gt;\n\
+        \                  </documentation>\n                </annotation>\n     \
+        \         </element>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\" name=\"description3\" type=\"xsd:string\">\n                <annotation>\n\
+        \                  <documentation>\n                    A description line\
+        \ of your mobile application promotion ad(s).\n                    &lt;span\
+        \ class=\"constraint MatchesRegex\"&gt;Description must not contain any '{'\
+        \ or '}' characters. This is checked by the regular expression '[^\\{\\}]*'.&lt;/span&gt;\n\
+        \                    &lt;span class=\"constraint Required\"&gt;This field\
+        \ is required and should not be {@code null} when it is contained within {@link\
+        \ Operator}s : ADD.&lt;/span&gt;\n                    &lt;span class=\"constraint\
+        \ StringLength\"&gt;The length of this string should be between 1 and 25,\
+        \ inclusive, (trimmed).&lt;/span&gt;\n                  </documentation>\n\
+        \                </annotation>\n              </element>\n              <element\
+        \ maxOccurs=\"1\" minOccurs=\"0\" name=\"description4\" type=\"xsd:string\"\
+        >\n                <annotation>\n                  <documentation>\n     \
+        \               A description line of your mobile application promotion ad(s).\n\
+        \                    &lt;span class=\"constraint MatchesRegex\"&gt;Description\
+        \ must not contain any '{' or '}' characters. This is checked by the regular\
+        \ expression '[^\\{\\}]*'.&lt;/span&gt;\n                    &lt;span class=\"\
+        constraint Required\"&gt;This field is required and should not be {@code null}\
+        \ when it is contained within {@link Operator}s : ADD.&lt;/span&gt;\n    \
+        \                &lt;span class=\"constraint StringLength\"&gt;The length\
+        \ of this string should be between 1 and 25, inclusive, (trimmed).&lt;/span&gt;\n\
+        \                  </documentation>\n                </annotation>\n     \
+        \         </element>\n              <element maxOccurs=\"unbounded\" minOccurs=\"\
+        0\"\n                name=\"youtubeVideoMediaIds\" type=\"xsd:long\">\n  \
+        \              <annotation>\n                  <documentation>\n         \
+        \           MediaIds for YouTube videos to be shown to users when advertising\
+        \ on video networks.\n                  </documentation>\n               \
+        \ </annotation>\n              </element>\n              <element maxOccurs=\"\
+        unbounded\" minOccurs=\"0\"\n                name=\"imageMediaIds\" type=\"\
+        xsd:long\">\n                <annotation>\n                  <documentation>\n\
+        \                    MediaIds for landscape images to be used in creatives\
+        \ to be shown to users when advertising on\n                    display networks.\n\
+        \                  </documentation>\n                </annotation>\n     \
+        \         </element>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\"\n                name=\"universalAppBiddingStrategyGoalType\" type=\"\
+        tns:UniversalAppBiddingStrategyGoalType\">\n                <annotation>\n\
+        \                  <documentation>\n                    Represents the goal\
+        \ towards which the bidding strategy, of this universal app campaign, should\n\
+        \                    optimize for.\n                  </documentation>\n \
+        \               </annotation>\n              </element>\n              <element\
+        \ maxOccurs=\"1\" minOccurs=\"0\"\n                name=\"youtubeVideoMediaIdsOps\"\
+        \ type=\"tns:ListOperations\">\n                <annotation>\n           \
+        \       <documentation>\n                    Operations for YouTube Video\
+        \ MediaIds.\n                  </documentation>\n                </annotation>\n\
+        \              </element>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\"\n                name=\"imageMediaIdsOps\" type=\"tns:ListOperations\"\
+        >\n                <annotation>\n                  <documentation>\n     \
+        \               Operations for Image MediaIds.\n                  </documentation>\n\
+        \                </annotation>\n              </element>\n              <element\
+        \ maxOccurs=\"unbounded\" minOccurs=\"0\"\n                name=\"adsPolicyDecisions\"\
+        \ type=\"tns:UniversalAppCampaignAdsPolicyDecisions\">\n                <annotation>\n\
+        \                  <documentation>\n                    Ads policy decisions\
+        \ associated with asset(s).\n                  </documentation>\n        \
+        \        </annotation>\n              </element>\n            </sequence>\n\
+        \          </extension>\n        </complexContent>\n      </complexType>\n\
+        \      <complexType name=\"NetworkSetting\">\n        <annotation>\n     \
+        \     <documentation>\n            Network settings for a Campaign.\n    \
+        \      </documentation>\n        </annotation>\n        <sequence>\n     \
+        \     <element maxOccurs=\"1\" minOccurs=\"0\" name=\"targetGoogleSearch\"\
+        \ type=\"xsd:boolean\">\n            <annotation>\n              <documentation>\n\
+        \                Ads will be served with Google.com search results.\n    \
+        \            &lt;span class=\"constraint Selectable\"&gt;This field can be\
+        \ selected using the value \"TargetGoogleSearch\".&lt;/span&gt;&lt;span class=\"\
+        constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n \
+        \               &lt;span class=\"constraint AdxEnabled\"&gt;This is disabled\
         \ for AdX.&lt;/span&gt;\n                &lt;span class=\"constraint CampaignType\"\
         &gt;This field may only be set to true for campaign channel type SEARCH.&lt;/span&gt;\n\
+        &lt;span class=\"constraint CampaignType\"&gt;This field may only be set to\
+        \ true for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
         &lt;span class=\"constraint CampaignType\"&gt;This field may only be set to\
         \ false for campaign channel type DISPLAY.&lt;/span&gt;\n              </documentation>\n\
         \            </annotation>\n          </element>\n          <element maxOccurs=\"\
@@ -1205,6 +1370,8 @@ interactions:
         \ value \"TargetSearchNetwork\".&lt;/span&gt;&lt;span class=\"constraint Filterable\"\
         &gt;This field can be filtered on.&lt;/span&gt;\n                &lt;span\
         \ class=\"constraint AdxEnabled\"&gt;This is disabled for AdX.&lt;/span&gt;\n\
+        \                &lt;span class=\"constraint CampaignType\"&gt;This field\
+        \ may only be set to true for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
         \              </documentation>\n            </annotation>\n          </element>\n\
         \          <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"targetContentNetwork\"\
         \ type=\"xsd:boolean\">\n            <annotation>\n              <documentation>\n\
@@ -1214,8 +1381,10 @@ interactions:
         &gt;This field can be selected using the value \"TargetContentNetwork\".&lt;/span&gt;&lt;span\
         \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
         \                &lt;span class=\"constraint CampaignType\"&gt;This field\
-        \ may only be set to false for campaign channel subtype SEARCH_MOBILE_APP.&lt;/span&gt;\n\
-        \              </documentation>\n            </annotation>\n          </element>\n\
+        \ may only be set to true for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
+        &lt;span class=\"constraint CampaignType\"&gt;This field may only be set to\
+        \ false for campaign channel subtype SEARCH_MOBILE_APP.&lt;/span&gt;\n   \
+        \           </documentation>\n            </annotation>\n          </element>\n\
         \          <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"targetPartnerSearchNetwork\"\
         \ type=\"xsd:boolean\">\n            <annotation>\n              <documentation>\n\
         \                Ads will be served on the Google Partner Network. This is\
@@ -1224,58 +1393,59 @@ interactions:
         \ be selected using the value \"TargetPartnerSearchNetwork\".&lt;/span&gt;&lt;span\
         \ class=\"constraint Filterable\"&gt;This field can be filtered on.&lt;/span&gt;\n\
         \                &lt;span class=\"constraint AdxEnabled\"&gt;This is disabled\
-        \ for AdX.&lt;/span&gt;\n              </documentation>\n            </annotation>\n\
-        \          </element>\n        </sequence>\n      </complexType>\n      <complexType\
-        \ name=\"NewEntityCreationError\">\n        <annotation>\n          <documentation>\n\
-        \            Error associated with creation of new entities.\n          </documentation>\n\
-        \        </annotation>\n        <complexContent>\n          <extension base=\"\
-        tns:ApiError\">\n            <sequence>\n              <element maxOccurs=\"\
-        1\" minOccurs=\"0\" name=\"reason\" type=\"tns:NewEntityCreationError.Reason\"\
-        >\n                <annotation>\n                  <documentation>\n     \
-        \               The error reason represented by an enum.\n               \
-        \   </documentation>\n                </annotation>\n              </element>\n\
-        \            </sequence>\n          </extension>\n        </complexContent>\n\
-        \      </complexType>\n      <complexType name=\"NotEmptyError\">\n      \
-        \  <annotation>\n          <documentation>\n            Errors corresponding\
-        \ with violation of a NOT EMPTY check.\n          </documentation>\n     \
-        \   </annotation>\n        <complexContent>\n          <extension base=\"\
-        tns:ApiError\">\n            <sequence>\n              <element maxOccurs=\"\
-        1\" minOccurs=\"0\" name=\"reason\" type=\"tns:NotEmptyError.Reason\">\n \
-        \               <annotation>\n                  <documentation>\n        \
-        \            The error reason represented by an enum.\n                  </documentation>\n\
+        \ for AdX.&lt;/span&gt;\n                &lt;span class=\"constraint CampaignType\"\
+        &gt;This field may only be set to false for campaign channel subtype UNIVERSAL_APP_CAMPAIGN.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"NewEntityCreationError\"\
+        >\n        <annotation>\n          <documentation>\n            Error associated\
+        \ with creation of new entities.\n          </documentation>\n        </annotation>\n\
+        \        <complexContent>\n          <extension base=\"tns:ApiError\">\n \
+        \           <sequence>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\" name=\"reason\" type=\"tns:NewEntityCreationError.Reason\">\n        \
+        \        <annotation>\n                  <documentation>\n               \
+        \     The error reason represented by an enum.\n                  </documentation>\n\
         \                </annotation>\n              </element>\n            </sequence>\n\
         \          </extension>\n        </complexContent>\n      </complexType>\n\
-        \      <complexType name=\"NullError\">\n        <annotation>\n          <documentation>\n\
-        \            Errors associated with violation of a NOT NULL check.\n     \
-        \     </documentation>\n        </annotation>\n        <complexContent>\n\
-        \          <extension base=\"tns:ApiError\">\n            <sequence>\n   \
-        \           <element maxOccurs=\"1\" minOccurs=\"0\" name=\"reason\" type=\"\
-        tns:NullError.Reason\">\n                <annotation>\n                  <documentation>\n\
-        \                    The error reason represented by an enum.\n          \
-        \        </documentation>\n                </annotation>\n              </element>\n\
-        \            </sequence>\n          </extension>\n        </complexContent>\n\
-        \      </complexType>\n      <complexType abstract=\"true\" name=\"NumberValue\"\
-        >\n        <annotation>\n          <documentation>\n            Number value\
-        \ types for constructing number valued ranges.\n          </documentation>\n\
+        \      <complexType name=\"NotEmptyError\">\n        <annotation>\n      \
+        \    <documentation>\n            Errors corresponding with violation of a\
+        \ NOT EMPTY check.\n          </documentation>\n        </annotation>\n  \
+        \      <complexContent>\n          <extension base=\"tns:ApiError\">\n   \
+        \         <sequence>\n              <element maxOccurs=\"1\" minOccurs=\"\
+        0\" name=\"reason\" type=\"tns:NotEmptyError.Reason\">\n                <annotation>\n\
+        \                  <documentation>\n                    The error reason represented\
+        \ by an enum.\n                  </documentation>\n                </annotation>\n\
+        \              </element>\n            </sequence>\n          </extension>\n\
+        \        </complexContent>\n      </complexType>\n      <complexType name=\"\
+        NullError\">\n        <annotation>\n          <documentation>\n          \
+        \  Errors associated with violation of a NOT NULL check.\n          </documentation>\n\
         \        </annotation>\n        <complexContent>\n          <extension base=\"\
-        tns:ComparableValue\">\n            <sequence/>\n          </extension>\n\
-        \        </complexContent>\n      </complexType>\n      <complexType abstract=\"\
-        true\" name=\"Operation\">\n        <annotation>\n          <documentation>\n\
-        \            This represents an operation that includes an operator and an\
-        \ operand\n            specified type.\n          </documentation>\n     \
-        \   </annotation>\n        <sequence>\n          <element maxOccurs=\"1\"\
-        \ minOccurs=\"0\" name=\"operator\" type=\"tns:Operator\">\n            <annotation>\n\
-        \              <documentation>\n                Operator.\n              \
-        \  &lt;span class=\"constraint Required\"&gt;This field is required and should\
-        \ not be {@code null}.&lt;/span&gt;\n              </documentation>\n    \
-        \        </annotation>\n          </element>\n          <element maxOccurs=\"\
-        1\" minOccurs=\"0\" name=\"Operation.Type\" type=\"xsd:string\">\n       \
-        \     <annotation>\n              <documentation>\n                Indicates\
-        \ that this instance is a subtype of Operation.\n                Although\
-        \ this field is returned in the response, it is ignored on input\n       \
-        \         and cannot be selected. Specify xsi:type instead.\n            \
-        \  </documentation>\n            </annotation>\n          </element>\n   \
-        \     </sequence>\n      </complexType>\n      <complexType name=\"OperationAccessDenied\"\
+        tns:ApiError\">\n            <sequence>\n              <element maxOccurs=\"\
+        1\" minOccurs=\"0\" name=\"reason\" type=\"tns:NullError.Reason\">\n     \
+        \           <annotation>\n                  <documentation>\n            \
+        \        The error reason represented by an enum.\n                  </documentation>\n\
+        \                </annotation>\n              </element>\n            </sequence>\n\
+        \          </extension>\n        </complexContent>\n      </complexType>\n\
+        \      <complexType abstract=\"true\" name=\"NumberValue\">\n        <annotation>\n\
+        \          <documentation>\n            Number value types for constructing\
+        \ number valued ranges.\n          </documentation>\n        </annotation>\n\
+        \        <complexContent>\n          <extension base=\"tns:ComparableValue\"\
+        >\n            <sequence/>\n          </extension>\n        </complexContent>\n\
+        \      </complexType>\n      <complexType abstract=\"true\" name=\"Operation\"\
+        >\n        <annotation>\n          <documentation>\n            This represents\
+        \ an operation that includes an operator and an operand\n            specified\
+        \ type.\n          </documentation>\n        </annotation>\n        <sequence>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"operator\" type=\"\
+        tns:Operator\">\n            <annotation>\n              <documentation>\n\
+        \                Operator.\n                &lt;span class=\"constraint Required\"\
+        &gt;This field is required and should not be {@code null}.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"Operation.Type\"\
+        \ type=\"xsd:string\">\n            <annotation>\n              <documentation>\n\
+        \                Indicates that this instance is a subtype of Operation.\n\
+        \                Although this field is returned in the response, it is ignored\
+        \ on input\n                and cannot be selected. Specify xsi:type instead.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"OperationAccessDenied\"\
         >\n        <annotation>\n          <documentation>\n            Operation\
         \ not permitted due to the invoked service's access policy.\n          </documentation>\n\
         \        </annotation>\n        <complexContent>\n          <extension base=\"\
@@ -1384,6 +1554,44 @@ interactions:
         \  &lt;span class=\"constraint InRange\"&gt;This field must be greater than\
         \ or equal to 0.&lt;/span&gt;\n              </documentation>\n          \
         \  </annotation>\n          </element>\n        </sequence>\n      </complexType>\n\
+        \      <complexType name=\"PolicyTopicEntry\">\n        <annotation>\n   \
+        \       <documentation>\n            Contains Ads Policy decisions.\n    \
+        \      </documentation>\n        </annotation>\n        <sequence>\n     \
+        \     <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"policyTopicEntryType\"\
+        \ type=\"tns:PolicyTopicEntryType\">\n            <annotation>\n         \
+        \     <documentation>\n                The type of the policy topic entry.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"unbounded\" minOccurs=\"0\"\n            name=\"\
+        policyTopicEvidences\" type=\"tns:PolicyTopicEvidence\">\n            <annotation>\n\
+        \              <documentation>\n                The policy topic evidences\
+        \ associated with this policy topic entry.\n              </documentation>\n\
+        \            </annotation>\n          </element>\n          <element maxOccurs=\"\
+        1\" minOccurs=\"0\" name=\"policyTopicId\" type=\"xsd:string\">\n        \
+        \    <annotation>\n              <documentation>\n                The policy\
+        \ topic id.\n                &lt;span class=\"constraint ReadOnly\"&gt;This\
+        \ field is read only and will be ignored when sent to the API.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"policyTopicName\"\
+        \ type=\"xsd:string\">\n            <annotation>\n              <documentation>\n\
+        \                The policy topic name (in English).\n                &lt;span\
+        \ class=\"constraint ReadOnly\"&gt;This field is read only and will be ignored\
+        \ when sent to the API.&lt;/span&gt;\n              </documentation>\n   \
+        \         </annotation>\n          </element>\n        </sequence>\n     \
+        \ </complexType>\n      <complexType name=\"PolicyTopicEvidence\">\n     \
+        \   <annotation>\n          <documentation>\n            Evidence that caused\
+        \ this policy topic to be reported.\n          </documentation>\n        </annotation>\n\
+        \        <sequence>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\n\
+        \            name=\"policyTopicEvidenceType\" type=\"tns:PolicyTopicEvidenceType\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   The type of evidence for the policy topic.\n              </documentation>\n\
+        \            </annotation>\n          </element>\n          <element maxOccurs=\"\
+        1\" minOccurs=\"0\" name=\"evidenceText\" type=\"xsd:string\">\n         \
+        \   <annotation>\n              <documentation>\n                The actual\
+        \ evidence that triggered this policy topic to be reported. This field is\
+        \ associated\n                with the policyTopicEvidenceType. So for example,\
+        \ when policyTopicEvidenceType is AD_TEXT the\n                evidence is\
+        \ the text associated with the Ad.\n              </documentation>\n     \
+        \       </annotation>\n          </element>\n        </sequence>\n      </complexType>\n\
         \      <complexType name=\"Predicate\">\n        <annotation>\n          <documentation>\n\
         \            Specifies how an entity (eg. adgroup, campaign, criterion, ad)\
         \ should be filtered.\n          </documentation>\n        </annotation>\n\
@@ -1517,12 +1725,26 @@ interactions:
         \ an enum.\n                  </documentation>\n                </annotation>\n\
         \              </element>\n            </sequence>\n          </extension>\n\
         \        </complexContent>\n      </complexType>\n      <complexType name=\"\
-        Selector\">\n        <annotation>\n          <documentation>\n           \
-        \ A generic selector to specify the type of information to return.\n     \
-        \     </documentation>\n        </annotation>\n        <sequence>\n      \
-        \    <element maxOccurs=\"unbounded\" minOccurs=\"0\" name=\"fields\" type=\"\
-        xsd:string\">\n            <annotation>\n              <documentation>\n \
-        \               List of fields to select.\n                &lt;a href=\"/adwords/api/docs/appendix/selectorfields\"\
+        SelectiveOptimization\">\n        <annotation>\n          <documentation>\n\
+        \            Selected set of conversion types for optimizing campaigns. For\
+        \ e.g. For universal app campaigns,\n            these are the set of in-app\
+        \ actions to optimize the campaign towards.\n          </documentation>\n\
+        \        </annotation>\n        <sequence>\n          <element maxOccurs=\"\
+        unbounded\" minOccurs=\"0\"\n            name=\"conversionTypeIds\" type=\"\
+        xsd:long\">\n            <annotation>\n              <documentation>\n   \
+        \             The selected conversion ids for selective optimization.\n  \
+        \            </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\"\n            name=\"conversionTypeIdsOps\"\
+        \ type=\"tns:ListOperations\">\n            <annotation>\n              <documentation>\n\
+        \                The selected conversion ids ops for selective optimization.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"Selector\"\
+        >\n        <annotation>\n          <documentation>\n            A generic\
+        \ selector to specify the type of information to return.\n          </documentation>\n\
+        \        </annotation>\n        <sequence>\n          <element maxOccurs=\"\
+        unbounded\" minOccurs=\"0\" name=\"fields\" type=\"xsd:string\">\n       \
+        \     <annotation>\n              <documentation>\n                List of\
+        \ fields to select.\n                &lt;a href=\"/adwords/api/docs/appendix/selectorfields\"\
         &gt;Possible values&lt;/a&gt;\n                are marked {@code Selectable}\
         \ on the entity's reference page.\n                For example, for the {@code\
         \ CampaignService} selector, refer to the\n                selectable fields\
@@ -1542,20 +1764,22 @@ interactions:
         1\" minOccurs=\"0\" name=\"dateRange\" type=\"tns:DateRange\">\n         \
         \   <annotation>\n              <documentation>\n                Range of\
         \ dates for which you want to include data. If this value is omitted,\n  \
-        \              results for all dates are returned.\n                &lt;span\
-        \ class=\"constraint DateRangeWithinRange\"&gt;This range must be contained\
-        \ within the range [19700101, 20380101].&lt;/span&gt;\n              </documentation>\n\
+        \              results for all dates are returned.\n                &lt;p\
+        \ class=\"note\"&gt;&lt;b&gt;Note:&lt;/b&gt; This field is only used by the\
+        \ report download\n                service. For all other services, it is\
+        \ ignored.&lt;/p&gt;\n                &lt;span class=\"constraint DateRangeWithinRange\"\
+        &gt;This range must be contained within the range [19700101, 20380101].&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"unbounded\" minOccurs=\"0\" name=\"ordering\"\
+        \ type=\"tns:OrderBy\">\n            <annotation>\n              <documentation>\n\
+        \                The fields on which you want to sort, and the sort order.\
+        \ The order in the list is\n                significant: The first element\
+        \ in the list indicates the primary sort order, the next\n               \
+        \ specifies the secondary sort order and so on.\n              </documentation>\n\
         \            </annotation>\n          </element>\n          <element maxOccurs=\"\
-        unbounded\" minOccurs=\"0\" name=\"ordering\" type=\"tns:OrderBy\">\n    \
-        \        <annotation>\n              <documentation>\n                The\
-        \ fields on which you want to sort, and the sort order. The order in the list\
-        \ is\n                significant: The first element in the list indicates\
-        \ the primary sort order, the next\n                specifies the secondary\
-        \ sort order and so on.\n              </documentation>\n            </annotation>\n\
-        \          </element>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\
-        \ name=\"paging\" type=\"tns:Paging\">\n            <annotation>\n       \
-        \       <documentation>\n                Pagination information.\n       \
-        \       </documentation>\n            </annotation>\n          </element>\n\
+        1\" minOccurs=\"0\" name=\"paging\" type=\"tns:Paging\">\n            <annotation>\n\
+        \              <documentation>\n                Pagination information.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
         \        </sequence>\n      </complexType>\n      <complexType name=\"SelectorError\"\
         >\n        <annotation>\n          <documentation>\n            Represents\
         \ possible error codes for {@link Selector}.\n          </documentation>\n\
@@ -1724,7 +1948,7 @@ interactions:
         >\n        <annotation>\n          <documentation>\n            &lt;a href=\"\
         https://support.google.com/adwords/answer/6268632\"&gt;Target CPA&lt;/a&gt;\
         \ is an automated bid\n            strategy that sets bids to help get as\
-        \ many conversions as possible at the target\n            cost-per-acquisition\
+        \ many conversions as possible at the target cost per\n            acquisition\
         \ (CPA) you set.\n            \n            &lt;p&gt;A {@linkplain #targetCpa\
         \ target CPA} must be set for the strategy, but can also be optionally\n \
         \           set for individual ad groups in the strategy. Ad group targets,\
@@ -1737,14 +1961,14 @@ interactions:
         \        <complexContent>\n          <extension base=\"tns:BiddingScheme\"\
         >\n            <sequence>\n              <element maxOccurs=\"1\" minOccurs=\"\
         0\" name=\"targetCpa\" type=\"tns:Money\">\n                <annotation>\n\
-        \                  <documentation>\n                    Average CPA target.\
-        \ This target should be greater than or equal to minimum billable unit based\n\
-        \                    on the currency for the account.\n                  \
-        \  &lt;span class=\"constraint Selectable\"&gt;This field can be selected\
-        \ using the value \"TargetCpa\".&lt;/span&gt;\n                    &lt;span\
-        \ class=\"constraint Required\"&gt;This field is required and should not be\
-        \ {@code null}.&lt;/span&gt;\n                  </documentation>\n       \
-        \         </annotation>\n              </element>\n              <element\
+        \                  <documentation>\n                    Average cost per acquisition\
+        \ (CPA) target. This target should be greater than or equal to\n         \
+        \           minimum billable unit based on the currency for the account.\n\
+        \                    &lt;span class=\"constraint Selectable\"&gt;This field\
+        \ can be selected using the value \"TargetCpa\".&lt;/span&gt;\n          \
+        \          &lt;span class=\"constraint Required\"&gt;This field is required\
+        \ and should not be {@code null}.&lt;/span&gt;\n                  </documentation>\n\
+        \                </annotation>\n              </element>\n              <element\
         \ maxOccurs=\"1\" minOccurs=\"0\"\n                name=\"maxCpcBidCeiling\"\
         \ type=\"tns:Money\">\n                <annotation>\n                  <documentation>\n\
         \                    Maximum cpc bid limit that applies to all keywords managed\
@@ -1806,14 +2030,39 @@ interactions:
         \ on keywords with lower-range quality\n                    scores.\n    \
         \              </documentation>\n                </annotation>\n         \
         \     </element>\n            </sequence>\n          </extension>\n      \
-        \  </complexContent>\n      </complexType>\n      <complexType name=\"TargetRoasBiddingScheme\"\
+        \  </complexContent>\n      </complexType>\n      <complexType name=\"TargetingSettingDetail\"\
+        >\n        <annotation>\n          <documentation>\n            Specifies\
+        \ if criteria of this type group should be used to restrict\n            targeting,\
+        \ or if ads can serve anywhere and criteria are only used in\n           \
+        \ determining the bid.\n            &lt;p&gt;For more information, see\n \
+        \           &lt;a href=\"https://support.google.com/adwords/answer/6056342\"\
+        &gt;Targeting Settings&lt;/a&gt;.&lt;/p&gt;\n          </documentation>\n\
+        \        </annotation>\n        <sequence>\n          <element maxOccurs=\"\
+        1\" minOccurs=\"0\" name=\"criterionTypeGroup\" type=\"tns:CriterionTypeGroup\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   The criterion type group that these settings apply to.\n             \
+        \   &lt;span class=\"constraint Required\"&gt;This field is required and should\
+        \ not be {@code null}.&lt;/span&gt;\n              </documentation>\n    \
+        \        </annotation>\n          </element>\n          <element maxOccurs=\"\
+        1\" minOccurs=\"0\" name=\"targetAll\" type=\"xsd:boolean\">\n           \
+        \ <annotation>\n              <documentation>\n                If true, criteria\
+        \ of this type can be used to modify bidding but will not restrict targeting\n\
+        \                of ads. This is equivalent to \"Bid only\" in the AdWords\
+        \ user interface.\n                If false, restricts your ads to showing\
+        \ only for the criteria you have selected for this\n                CriterionTypeGroup.\
+        \ This is equivalent to \"Target and Bid\" in the AdWords user interface.\n\
+        \                The default setting for a CriterionTypeGroup is false (\"\
+        Target and Bid\").\n                &lt;span class=\"constraint Required\"\
+        &gt;This field is required and should not be {@code null}.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"TargetRoasBiddingScheme\"\
         >\n        <annotation>\n          <documentation>\n            Target Roas\
         \ bidding strategy helps you maximize revenue while averaging a specific target\n\
         \            Return On Average Spend (ROAS).\n            \n            &lt;p&gt;For\
         \ example: If TargetRoas is 1.5, the strategy will create as much revenue\
         \ as possible while\n            ensuring that every $1.00 of clicks provides\
         \ $1.50 in conversion value.\n            \n            &lt;p&gt;Note that\
-        \ campaigns must meet &lt;a\n            href=\"//support.google.com/adwords/answer/2471188\"\
+        \ campaigns must meet &lt;a\n            href=\"//support.google.com/adwords/answer/6268637\"\
         &gt;specific\n            eligibility requirements&lt;/a&gt; before they can\
         \ use the &lt;code&gt;TargetRoasBiddingScheme&lt;/code&gt;\n            bidding\
         \ strategy.\n            &lt;span class=\"constraint AdxEnabled\"&gt;This\
@@ -1873,6 +2122,17 @@ interactions:
         &gt;This field must be greater than or equal to 0.&lt;/span&gt;\n        \
         \          </documentation>\n                </annotation>\n             \
         \ </element>\n            </sequence>\n          </extension>\n        </complexContent>\n\
+        \      </complexType>\n      <complexType name=\"TargetingSetting\">\n   \
+        \     <annotation>\n          <documentation>\n            Setting for targeting\
+        \ related features.\n            This is applicable at Campaign and AdGroup\
+        \ level.\n          </documentation>\n        </annotation>\n        <complexContent>\n\
+        \          <extension base=\"tns:Setting\">\n            <sequence>\n    \
+        \          <element maxOccurs=\"unbounded\" minOccurs=\"0\"\n            \
+        \    name=\"details\" type=\"tns:TargetingSettingDetail\">\n             \
+        \   <annotation>\n                  <documentation>\n                    The\
+        \ list of per-criterion-type-group targeting settings.\n                 \
+        \ </documentation>\n                </annotation>\n              </element>\n\
+        \            </sequence>\n          </extension>\n        </complexContent>\n\
         \      </complexType>\n      <complexType name=\"TrackingSetting\">\n    \
         \    <annotation>\n          <documentation>\n            Campaign level settings\
         \ for tracking information.\n          </documentation>\n        </annotation>\n\
@@ -1887,14 +2147,35 @@ interactions:
         \ StringLength\"&gt;This string must not be empty.&lt;/span&gt;\n        \
         \          </documentation>\n                </annotation>\n             \
         \ </element>\n            </sequence>\n          </extension>\n        </complexContent>\n\
-        \      </complexType>\n      <complexType name=\"UrlError\">\n        <annotation>\n\
-        \          <documentation>\n            Url Validation errors.\n         \
-        \ </documentation>\n        </annotation>\n        <complexContent>\n    \
-        \      <extension base=\"tns:ApiError\">\n            <sequence>\n       \
-        \       <element maxOccurs=\"1\" minOccurs=\"0\" name=\"reason\" type=\"tns:UrlError.Reason\"\
-        >\n                <annotation>\n                  <documentation>\n     \
-        \               The error reason represented by an enum.\n               \
-        \   </documentation>\n                </annotation>\n              </element>\n\
+        \      </complexType>\n      <complexType name=\"UniversalAppCampaignAdsPolicyDecisions\"\
+        >\n        <annotation>\n          <documentation>\n            Contains Universal\
+        \ App Campaign Ads Policy decisions with asset identifier information, where\n\
+        \            available.\n          </documentation>\n        </annotation>\n\
+        \        <sequence>\n          <element maxOccurs=\"1\" minOccurs=\"0\"\n\
+        \            name=\"universalAppCampaignAsset\" type=\"tns:UniversalAppCampaignAsset\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Used to identify assets that are associated with the Ads Policy decisions.\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \          <element maxOccurs=\"1\" minOccurs=\"0\" name=\"assetId\" type=\"\
+        xsd:string\">\n            <annotation>\n              <documentation>\n \
+        \               Unique identifier, which when combined with the UniversalAppCampaignAsset,\
+        \ can be used to\n                uniquely identify the exact asset.\n   \
+        \             \n                &lt;p&gt;For example, in the case of {@link\
+        \ UniversalAppCampaignAsset}.VIDEO - the id could be used\n              \
+        \  to identify the individual video.\n              </documentation>\n   \
+        \         </annotation>\n          </element>\n          <element maxOccurs=\"\
+        unbounded\" minOccurs=\"0\"\n            name=\"policyTopicEntries\" type=\"\
+        tns:PolicyTopicEntry\">\n            <annotation>\n              <documentation>\n\
+        \                List of policy decisions associated with the asset(s).\n\
+        \              </documentation>\n            </annotation>\n          </element>\n\
+        \        </sequence>\n      </complexType>\n      <complexType name=\"UrlError\"\
+        >\n        <annotation>\n          <documentation>\n            Url Validation\
+        \ errors.\n          </documentation>\n        </annotation>\n        <complexContent>\n\
+        \          <extension base=\"tns:ApiError\">\n            <sequence>\n   \
+        \           <element maxOccurs=\"1\" minOccurs=\"0\" name=\"reason\" type=\"\
+        tns:UrlError.Reason\">\n                <annotation>\n                  <documentation>\n\
+        \                    The error reason represented by an enum.\n          \
+        \        </documentation>\n                </annotation>\n              </element>\n\
         \            </sequence>\n          </extension>\n        </complexContent>\n\
         \      </complexType>\n      <complexType name=\"VanityPharma\">\n       \
         \ <annotation>\n          <documentation>\n            Describes how unbranded\
@@ -1964,6 +2245,12 @@ interactions:
         \          </enumeration>\n          <enumeration value=\"DISPLAY_EXPRESS\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   AdWords Express campaigns for display.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"UNIVERSAL_APP_CAMPAIGN\">\n            <annotation>\n          \
+        \    <documentation>\n                Campaigns specialized for advertising\
+        \ mobile app installations, that targets\n                multiple advertising\
+        \ channels across search, display and youtube.  Google\n                manages\
+        \ the keywords and ads for these campaigns.\n              </documentation>\n\
         \            </annotation>\n          </enumeration>\n        </restriction>\n\
         \      </simpleType>\n      <simpleType name=\"AdvertisingChannelType\">\n\
         \        <annotation>\n          <documentation>\n            The channel\
@@ -1984,6 +2271,10 @@ interactions:
         \ value=\"SHOPPING\">\n            <annotation>\n              <documentation>\n\
         \                Shopping campaigns serve on the shopping property and on\
         \ google.com search\n                results.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"MULTI_CHANNEL\">\n            <annotation>\n              <documentation>\n\
+        \                Universal app campaigns that target multiple channels across\
+        \ search, display,\n                youtube, etc.\n              </documentation>\n\
         \            </annotation>\n          </enumeration>\n        </restriction>\n\
         \      </simpleType>\n      <simpleType name=\"AdxError.Reason\">\n      \
         \  <annotation>\n          <documentation>\n            The reasons for the\
@@ -2216,14 +2507,6 @@ interactions:
         >\n            <annotation>\n              <documentation>\n             \
         \   Cannot set bidding strategy to Manual CPM for search network only campaigns.\n\
         \              </documentation>\n            </annotation>\n          </enumeration>\n\
-        \          <enumeration value=\"BIDDING_STRATEGY_NOT_SUPPORTED_FOR_CAMPAIGNS_WITH_EXPERIMENTS\"\
-        >\n            <annotation>\n              <documentation>\n             \
-        \   The campaign has active experiments so bidding transition is prohibited.\n\
-        \              </documentation>\n            </annotation>\n          </enumeration>\n\
-        \          <enumeration value=\"CANNOT_CHANGE_BIDDING_STRATEGY_IN_CAMPAIGN_WITH_EXPERIMENT\"\
-        >\n            <annotation>\n              <documentation>\n             \
-        \   The campaign has active experiment so bid strategy change is prohibited.\n\
-        \              </documentation>\n            </annotation>\n          </enumeration>\n\
         \          <enumeration value=\"BIDDING_STRATEGY_NOT_SUPPORTED_IN_DRAFTS_OR_EXPERIMENTS\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   The bidding strategy is not supported for use in drafts or experiments.\n\
@@ -2299,7 +2582,7 @@ interactions:
         \          <enumeration value=\"TARGET_CPA\">\n            <annotation>\n\
         \              <documentation>\n                Target CPA is an automated\
         \ bid strategy that sets bids to help get\n                as many conversions\
-        \ as possible at the target cost-per-acquisition\n                (CPA) you\
+        \ as possible at the target cost per acquisition\n                (CPA) you\
         \ set. See {@linkplain TargetCpaBiddingScheme}\n                for more details.\n\
         \              </documentation>\n            </annotation>\n          </enumeration>\n\
         \          <enumeration value=\"TARGET_ROAS\">\n            <annotation>\n\
@@ -2404,10 +2687,6 @@ interactions:
         CANNOT_GO_BACK_TO_INCOMPLETE\">\n            <annotation>\n              <documentation>\n\
         \                A complete campaign cannot go back to being incomplete\n\
         \              </documentation>\n            </annotation>\n          </enumeration>\n\
-        \          <enumeration value=\"CANNOT_SET_END_DATE_BEFORE_EXPERIMENT_END_DATE\"\
-        >\n            <annotation>\n              <documentation>\n             \
-        \   Trying to modify an end date before an active experiment end date.\n \
-        \             </documentation>\n            </annotation>\n          </enumeration>\n\
         \          <enumeration value=\"CANNOT_TARGET_CONTENT_NETWORK\">\n       \
         \     <annotation>\n              <documentation>\n                Cannot\
         \ target content network.\n              </documentation>\n            </annotation>\n\
@@ -2505,22 +2784,30 @@ interactions:
         INVALID_SHOPPING_SALES_COUNTRY\">\n            <annotation>\n            \
         \  <documentation>\n                The country in shopping setting is not\
         \ an allowed country.\n              </documentation>\n            </annotation>\n\
-        \          </enumeration>\n          <enumeration value=\"ADVERTISING_CHANNEL_TYPE_NOT_AVAILABLE_FOR_ACCOUNT_TYPE\"\
+        \          </enumeration>\n          <enumeration value=\"MISSING_UNIVERSAL_APP_CAMPAIGN_SETTING\"\
         >\n            <annotation>\n              <documentation>\n             \
-        \   The requested channel type is not available according to the customer's\
-        \ account setting.\n              </documentation>\n            </annotation>\n\
-        \          </enumeration>\n          <enumeration value=\"INVALID_ADVERTISING_CHANNEL_SUB_TYPE\"\
+        \   A Campaign with channel sub type UNIVERSAL_APP_CAMPAIGN must have a\n\
+        \                UniversalAppCampaignSetting specified.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"ADVERTISING_CHANNEL_TYPE_NOT_AVAILABLE_FOR_ACCOUNT_TYPE\">\n   \
+        \         <annotation>\n              <documentation>\n                The\
+        \ requested channel type is not available according to the customer's account\
+        \ setting.\n              </documentation>\n            </annotation>\n  \
+        \        </enumeration>\n          <enumeration value=\"INVALID_ADVERTISING_CHANNEL_SUB_TYPE\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   The AdvertisingChannelSubType is not a valid subtype of the primary channel\
         \ type.\n              </documentation>\n            </annotation>\n     \
-        \     </enumeration>\n          <enumeration value=\"UNKNOWN\">\n        \
-        \    <annotation>\n              <documentation>\n                Default\
-        \ error\n                &lt;span class=\"constraint Rejected\"&gt;Used for\
-        \ return value only. An enumeration could not be processed, typically due\
-        \ to incompatibility with your WSDL version.&lt;/span&gt;\n              </documentation>\n\
-        \            </annotation>\n          </enumeration>\n        </restriction>\n\
-        \      </simpleType>\n      <simpleType name=\"CampaignStatus\">\n       \
-        \ <annotation>\n          <documentation>\n            Campaign status.\n\
+        \     </enumeration>\n          <enumeration value=\"AT_LEAST_ONE_CONVERSION_MUST_BE_SELECTED\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   At least one conversion must be selected.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"UNKNOWN\">\n            <annotation>\n              <documentation>\n\
+        \                Default error\n                &lt;span class=\"constraint\
+        \ Rejected\"&gt;Used for return value only. An enumeration could not be processed,\
+        \ typically due to incompatibility with your WSDL version.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"CampaignStatus\"\
+        >\n        <annotation>\n          <documentation>\n            Campaign status.\n\
         \          </documentation>\n        </annotation>\n        <restriction base=\"\
         xsd:string\">\n          <enumeration value=\"UNKNOWN\">\n            <annotation>\n\
         \              <documentation>\n                &lt;span class=\"constraint\
@@ -2596,13 +2883,56 @@ interactions:
         \ to have a sufficient count\n                of conversions.\n          \
         \    </documentation>\n            </annotation>\n          </enumeration>\n\
         \          <enumeration value=\"UNKNOWN\"/>\n        </restriction>\n    \
-        \  </simpleType>\n      <simpleType name=\"DatabaseError.Reason\">\n     \
-        \   <annotation>\n          <documentation>\n            The reasons for the\
-        \ database error.\n          </documentation>\n        </annotation>\n   \
-        \     <restriction base=\"xsd:string\">\n          <enumeration value=\"CONCURRENT_MODIFICATION\"\
-        >\n            <annotation>\n              <documentation>\n             \
-        \   A concurrency problem occurred as two threads were attempting to modify\
-        \ same object.\n              </documentation>\n            </annotation>\n\
+        \  </simpleType>\n      <simpleType name=\"CriterionTypeGroup\">\n       \
+        \ <annotation>\n          <documentation>\n            The list of groupings\
+        \ of criteria types.\n          </documentation>\n        </annotation>\n\
+        \        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
+        KEYWORD\">\n            <annotation>\n              <documentation>\n    \
+        \            Criteria for targeting keywords. e.g. 'mars cruise'\n       \
+        \         KEYWORD may be used as a content bid dimension. Keywords are always\
+        \ a targeting dimension,\n                so may not be set as a target \"\
+        ALL\" dimension with {@link TargetRestriction}.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"USER_INTEREST_AND_LIST\">\n            <annotation>\n          \
+        \    <documentation>\n                Criteria for targeting lists of users.\
+        \  Lists may represent users with particular\n                interests, or\
+        \ they may represent users who have interacted with an advertiser's site in\n\
+        \                particular ways.\n              </documentation>\n      \
+        \      </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        VERTICAL\">\n            <annotation>\n              <documentation>\n   \
+        \             Criteria for targeting similar categories of placements, e.g.\
+        \ 'category::Animals&gt;Pets'\n                Used only for content network\
+        \ targeting.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"GENDER\">\n    \
+        \        <annotation>\n              <documentation>\n                Criteria\
+        \ for targeting gender.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"AGE_RANGE\">\n \
+        \           <annotation>\n              <documentation>\n                Criteria\
+        \ for targeting age ranges.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"PLACEMENT\">\n \
+        \           <annotation>\n              <documentation>\n                Criteria\
+        \ for targeting placements. aka Website. e.g. 'www.flowers4sale.com'\n   \
+        \             This group also includes mobile applications and mobile app\
+        \ categories.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"PARENT\">\n    \
+        \        <annotation>\n              <documentation>\n                Criteria\
+        \ for parental status targeting.\n              </documentation>\n       \
+        \     </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        NONE\">\n            <annotation>\n              <documentation>\n       \
+        \         Special criteria type group used to reset the existing value.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"UNKNOWN\">\n            <annotation>\n   \
+        \           <documentation>\n                &lt;span class=\"constraint Rejected\"\
+        &gt;Used for return value only. An enumeration could not be processed, typically\
+        \ due to incompatibility with your WSDL version.&lt;/span&gt;\n          \
+        \    </documentation>\n            </annotation>\n          </enumeration>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"DatabaseError.Reason\"\
+        >\n        <annotation>\n          <documentation>\n            The reasons\
+        \ for the database error.\n          </documentation>\n        </annotation>\n\
+        \        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
+        CONCURRENT_MODIFICATION\">\n            <annotation>\n              <documentation>\n\
+        \                A concurrency problem occurred as two threads were attempting\
+        \ to modify same object.\n              </documentation>\n            </annotation>\n\
         \          </enumeration>\n          <enumeration value=\"PERMISSION_DENIED\"\
         >\n            <annotation>\n              <documentation>\n             \
         \   The permission was denied to access an object.\n              </documentation>\n\
@@ -2851,6 +3181,53 @@ interactions:
         constraint Rejected\"&gt;Used for return value only. An enumeration could\
         \ not be processed, typically due to incompatibility with your WSDL version.&lt;/span&gt;\n\
         \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"ListError.Reason\"\
+        >\n        <annotation>\n          <documentation>\n            The reason\
+        \ for the error.\n          </documentation>\n        </annotation>\n    \
+        \    <restriction base=\"xsd:string\">\n          <enumeration value=\"CLEAR_UNSUPPORTED\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   A request attempted to clear a list that does not support being cleared.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"INVALID_OPERATOR\">\n            <annotation>\n\
+        \              <documentation>\n                The operator is invalid for\
+        \ the list or list element the operator was applied to.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"INVALID_ELEMENT\">\n            <annotation>\n              <documentation>\n\
+        \                An UPDATE or REMOVE was requested for a list element that\
+        \ does not exist.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"LIST_LENGTH_MISMATCH\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   The operator list has different a size compared to the element list.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"DUPLICATE_ELEMENT\">\n            <annotation>\n\
+        \              <documentation>\n                Duplicate elements inside\
+        \ list.\n              </documentation>\n            </annotation>\n     \
+        \     </enumeration>\n          <enumeration value=\"MUTATE_UNSUPPORTED\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   The API operator of the mutate being performed on the entity containing\
+        \ this list is not\n                supported.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"UNKNOWN\"/>\n        </restriction>\n      </simpleType>\n     \
+        \ <simpleType name=\"ListOperations.ListOperator\">\n        <annotation>\n\
+        \          <documentation>\n            Specifies the intended behavior for\
+        \ a list element.\n          </documentation>\n        </annotation>\n   \
+        \     <restriction base=\"xsd:string\">\n          <enumeration value=\"PUT\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Adds to a list, or overrides an existing element if it exists.\n     \
+        \         </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"REMOVE\">\n            <annotation>\n    \
+        \          <documentation>\n                Removes this element from the\
+        \ list.\n              </documentation>\n            </annotation>\n     \
+        \     </enumeration>\n          <enumeration value=\"UPDATE\">\n         \
+        \   <annotation>\n              <documentation>\n                Updates this\
+        \ element with the existing behavior of null fields inside the list element\
+        \ being\n                a no-op. If the element doesn't exist it is added.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"UNKNOWN\">\n            <annotation>\n   \
+        \           <documentation>\n                &lt;span class=\"constraint Rejected\"\
+        &gt;Used for return value only. An enumeration could not be processed, typically\
+        \ due to incompatibility with your WSDL version.&lt;/span&gt;\n          \
+        \    </documentation>\n            </annotation>\n          </enumeration>\n\
         \        </restriction>\n      </simpleType>\n      <simpleType name=\"NewEntityCreationError.Reason\"\
         >\n        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
         CANNOT_SET_ID_FOR_ADD\">\n            <annotation>\n              <documentation>\n\
@@ -2940,42 +3317,68 @@ interactions:
         \ value=\"PAGE_ONE_PROMOTED\">\n            <annotation>\n              <documentation>\n\
         \                Top slots of the first page on google.com.\n            \
         \  </documentation>\n            </annotation>\n          </enumeration>\n\
-        \        </restriction>\n      </simpleType>\n      <simpleType name=\"Predicate.Operator\"\
-        >\n        <annotation>\n          <documentation>\n            Defines the\
-        \ valid set of operators.\n          </documentation>\n        </annotation>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"PolicyTopicEntryType\"\
+        >\n        <annotation>\n          <documentation>\n            The summarized\
+        \ nature of a policy entry.\n          </documentation>\n        </annotation>\n\
         \        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
-        EQUALS\">\n            <annotation>\n              <documentation>\n     \
-        \           Checks if the field is equal to the given value.\n           \
-        \     \n                &lt;p&gt;This operator is used with integers, dates,\
-        \ booleans, strings,\n                enums, and sets.\n              </documentation>\n\
-        \            </annotation>\n          </enumeration>\n          <enumeration\
-        \ value=\"NOT_EQUALS\">\n            <annotation>\n              <documentation>\n\
-        \                Checks if the field does not equal the given value.\n   \
-        \             \n                &lt;p&gt;This operator is used with integers,\
-        \ booleans, strings, enums,\n                and sets.\n              </documentation>\n\
-        \            </annotation>\n          </enumeration>\n          <enumeration\
-        \ value=\"IN\">\n            <annotation>\n              <documentation>\n\
-        \                Checks if the field is equal to one of the given values.\n\
-        \                \n                &lt;p&gt;This operator accepts multiple\
-        \ operands and is used with\n                integers, booleans, strings,\
-        \ and enums.\n              </documentation>\n            </annotation>\n\
-        \          </enumeration>\n          <enumeration value=\"NOT_IN\">\n    \
-        \        <annotation>\n              <documentation>\n                Checks\
-        \ if the field does not equal any of the given values.\n                \n\
-        \                &lt;p&gt;This operator accepts multiple operands and is used\
-        \ with\n                integers, booleans, strings, and enums.\n        \
-        \      </documentation>\n            </annotation>\n          </enumeration>\n\
-        \          <enumeration value=\"GREATER_THAN\">\n            <annotation>\n\
-        \              <documentation>\n                Checks if the field is greater\
-        \ than the given value.\n                \n                &lt;p&gt;This operator\
-        \ is used with numbers and dates.\n              </documentation>\n      \
-        \      </annotation>\n          </enumeration>\n          <enumeration value=\"\
-        GREATER_THAN_EQUALS\">\n            <annotation>\n              <documentation>\n\
-        \                Checks if the field is greater or equal to the given value.\n\
-        \                \n                &lt;p&gt;This operator is used with numbers\
+        UNKNOWN\">\n            <annotation>\n              <documentation>\n    \
+        \            &lt;span class=\"constraint Rejected\"&gt;Used for return value\
+        \ only. An enumeration could not be processed, typically due to incompatibility\
+        \ with your WSDL version.&lt;/span&gt;\n              </documentation>\n \
+        \           </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"PROHIBITED\">\n            <annotation>\n              <documentation>\n\
+        \                Will never serve.\n              </documentation>\n     \
+        \       </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        LIMITED\">\n            <annotation>\n              <documentation>\n    \
+        \            Constrained for at least one value.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n        </restriction>\n\
+        \      </simpleType>\n      <simpleType name=\"PolicyTopicEvidenceType\">\n\
+        \        <annotation>\n          <documentation>\n            Describes the\
+        \ type of evidence inside the policy topic evidence.\n          </documentation>\n\
+        \        </annotation>\n        <restriction base=\"xsd:string\">\n      \
+        \    <enumeration value=\"UNKNOWN\">\n            <annotation>\n         \
+        \     <documentation>\n                &lt;span class=\"constraint Rejected\"\
+        &gt;Used for return value only. An enumeration could not be processed, typically\
+        \ due to incompatibility with your WSDL version.&lt;/span&gt;\n          \
+        \    </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"AD_TEXT\"/>\n          <enumeration value=\"\
+        HTTP_CODE\"/>\n        </restriction>\n      </simpleType>\n      <simpleType\
+        \ name=\"Predicate.Operator\">\n        <annotation>\n          <documentation>\n\
+        \            Defines the valid set of operators.\n          </documentation>\n\
+        \        </annotation>\n        <restriction base=\"xsd:string\">\n      \
+        \    <enumeration value=\"EQUALS\">\n            <annotation>\n          \
+        \    <documentation>\n                Checks if the field is equal to the\
+        \ given value.\n                \n                &lt;p&gt;This operator is\
+        \ used with integers, dates, booleans, strings,\n                enums, and\
+        \ sets.\n              </documentation>\n            </annotation>\n     \
+        \     </enumeration>\n          <enumeration value=\"NOT_EQUALS\">\n     \
+        \       <annotation>\n              <documentation>\n                Checks\
+        \ if the field does not equal the given value.\n                \n       \
+        \         &lt;p&gt;This operator is used with integers, booleans, strings,\
+        \ enums,\n                and sets.\n              </documentation>\n    \
+        \        </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        IN\">\n            <annotation>\n              <documentation>\n         \
+        \       Checks if the field is equal to one of the given values.\n       \
+        \         \n                &lt;p&gt;This operator accepts multiple operands\
+        \ and is used with\n                integers, booleans, strings, and enums.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"NOT_IN\">\n            <annotation>\n    \
+        \          <documentation>\n                Checks if the field does not equal\
+        \ any of the given values.\n                \n                &lt;p&gt;This\
+        \ operator accepts multiple operands and is used with\n                integers,\
+        \ booleans, strings, and enums.\n              </documentation>\n        \
+        \    </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        GREATER_THAN\">\n            <annotation>\n              <documentation>\n\
+        \                Checks if the field is greater than the given value.\n  \
+        \              \n                &lt;p&gt;This operator is used with numbers\
         \ and dates.\n              </documentation>\n            </annotation>\n\
-        \          </enumeration>\n          <enumeration value=\"LESS_THAN\">\n \
-        \           <annotation>\n              <documentation>\n                Checks\
+        \          </enumeration>\n          <enumeration value=\"GREATER_THAN_EQUALS\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Checks if the field is greater or equal to the given value.\n        \
+        \        \n                &lt;p&gt;This operator is used with numbers and\
+        \ dates.\n              </documentation>\n            </annotation>\n    \
+        \      </enumeration>\n          <enumeration value=\"LESS_THAN\">\n     \
+        \       <annotation>\n              <documentation>\n                Checks\
         \ if the field is less than the given value.\n                \n         \
         \       &lt;p&gt;This operator is used with numbers and dates.\n         \
         \     </documentation>\n            </annotation>\n          </enumeration>\n\
@@ -3299,8 +3702,32 @@ interactions:
         \   TargetingSettings in search campaigns should not have CriterionTypeGroup.PLACEMENT\n\
         \                set to targetAll.\n              </documentation>\n     \
         \       </annotation>\n          </enumeration>\n          <enumeration value=\"\
-        UNKNOWN\">\n            <annotation>\n              <documentation>\n    \
-        \            Unspecified campaign setting error.\n                &lt;span\
+        UNIVERSAL_APP_CAMPAIGN_SETTING_DUPLICATE_DESCRIPTION\">\n            <annotation>\n\
+        \              <documentation>\n                Duplicate description in universal\
+        \ app setting description field.\n              </documentation>\n       \
+        \     </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        UNIVERSAL_APP_CAMPAIGN_SETTING_DESCRIPTION_LINE_WIDTH_TOO_LONG\">\n      \
+        \      <annotation>\n              <documentation>\n                Description\
+        \ line width is too long in universal app setting description field.\n   \
+        \           </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"UNIVERSAL_APP_CAMPAIGN_SETTING_APP_ID_CANNOT_BE_MODIFIED\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Universal app setting appId field cannot be modified for COMPLETE campaigns.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"TOO_MANY_YOUTUBE_MEDIA_IDS_IN_UNIVERSAL_APP_CAMPAIGN\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   YoutubeVideoMediaIds in universal app setting cannot exceed size limit.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"TOO_MANY_IMAGE_MEDIA_IDS_IN_UNIVERSAL_APP_CAMPAIGN\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   ImageMediaIds in universal app setting cannot exceed size limit.\n   \
+        \           </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"MEDIA_INCOMPATIBLE_FOR_UNIVERSAL_APP_CAMPAIGN\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Media is incompatible for universal app campaign.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"UNKNOWN\">\n            <annotation>\n              <documentation>\n\
+        \                Unspecified campaign setting error.\n                &lt;span\
         \ class=\"constraint Rejected\"&gt;Used for return value only. An enumeration\
         \ could not be processed, typically due to incompatibility with your WSDL\
         \ version.&lt;/span&gt;\n              </documentation>\n            </annotation>\n\
@@ -3359,15 +3786,81 @@ interactions:
         \ value=\"HOUR\"/>\n          <enumeration value=\"DAY\"/>\n          <enumeration\
         \ value=\"WEEK\"/>\n          <enumeration value=\"MONTH\"/>\n          <enumeration\
         \ value=\"LIFETIME\"/>\n        </restriction>\n      </simpleType>\n    \
-        \  <simpleType name=\"UrlError.Reason\">\n        <annotation>\n         \
-        \ <documentation>\n            The reasons for the url error.\n          </documentation>\n\
-        \        </annotation>\n        <restriction base=\"xsd:string\">\n      \
-        \    <enumeration value=\"INVALID_TRACKING_URL_TEMPLATE\">\n            <annotation>\n\
-        \              <documentation>\n                The tracking url template\
-        \ is invalid.\n              </documentation>\n            </annotation>\n\
-        \          </enumeration>\n          <enumeration value=\"INVALID_TAG_IN_TRACKING_URL_TEMPLATE\"\
+        \  <simpleType name=\"UniversalAppBiddingStrategyGoalType\">\n        <annotation>\n\
+        \          <documentation>\n            Represents the goal towards which\
+        \ the bidding strategy, of a universal app\n            campaign, should optimize\
+        \ for. See go/walnut-pie-apdr for more.\n          </documentation>\n    \
+        \    </annotation>\n        <restriction base=\"xsd:string\">\n          <enumeration\
+        \ value=\"UNKNOWN\">\n            <annotation>\n              <documentation>\n\
+        \                &lt;span class=\"constraint Rejected\"&gt;Used for return\
+        \ value only. An enumeration could not be processed, typically due to incompatibility\
+        \ with your WSDL version.&lt;/span&gt;\n              </documentation>\n \
+        \           </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"OPTIMIZE_FOR_INSTALL_CONVERSION_VOLUME\">\n            <annotation>\n\
+        \              <documentation>\n                The bidding strategy of the\
+        \ universal app campaign should aim to maximize\n                installation\
+        \ of the app.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"OPTIMIZE_FOR_IN_APP_CONVERSION_VOLUME\"\
         >\n            <annotation>\n              <documentation>\n             \
-        \   The tracking url template contains invalid tag.\n              </documentation>\n\
+        \   The bidding strategy of the universal app campaign should aim to maximize\
+        \ the\n                selected in-app conversions' volume.\n            \
+        \  </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"OPTIMIZE_FOR_TOTAL_CONVERSION_VALUE\">\n \
+        \           <annotation>\n              <documentation>\n                The\
+        \ bidding strategy of the universal app campaign should aim to maximize all\n\
+        \                conversions' value, i.e., install + selected in-app conversions.NOTE:\
+        \ This value\n                cannot be set by external clients.\n       \
+        \       </documentation>\n            </annotation>\n          </enumeration>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"UniversalAppCampaignAsset\"\
+        >\n        <annotation>\n          <documentation>\n            Represents\
+        \ the individual assets that are utilized as part of the campaign.\n     \
+        \     </documentation>\n        </annotation>\n        <restriction base=\"\
+        xsd:string\">\n          <enumeration value=\"UNKNOWN\">\n            <annotation>\n\
+        \              <documentation>\n                &lt;span class=\"constraint\
+        \ Rejected\"&gt;Used for return value only. An enumeration could not be processed,\
+        \ typically due to incompatibility with your WSDL version.&lt;/span&gt;\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"COMBINATION\">\n            <annotation>\n\
+        \              <documentation>\n                Identifies a combination of\
+        \ assets.\n              </documentation>\n            </annotation>\n   \
+        \       </enumeration>\n          <enumeration value=\"APP_DESTINATION\">\n\
+        \            <annotation>\n              <documentation>\n               \
+        \ Identifies the app destination.\n              </documentation>\n      \
+        \      </annotation>\n          </enumeration>\n          <enumeration value=\"\
+        APP_ASSETS\">\n            <annotation>\n              <documentation>\n \
+        \               Identifies the app related data, like app name, app icon,\
+        \ developer name\n                including translations of the content.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"DESCRIPTION_1\">\n            <annotation>\n\
+        \              <documentation>\n                Identifies the campaign setting's\
+        \ description1 field.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"DESCRIPTION_2\"\
+        >\n            <annotation>\n              <documentation>\n             \
+        \   Identifies the campaign setting's description2 field.\n              </documentation>\n\
+        \            </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"DESCRIPTION_3\">\n            <annotation>\n              <documentation>\n\
+        \                Identifies the campaign setting's description3 field.\n \
+        \             </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"DESCRIPTION_4\">\n            <annotation>\n\
+        \              <documentation>\n                Identifies the campaign setting's\
+        \ description4 field.\n              </documentation>\n            </annotation>\n\
+        \          </enumeration>\n          <enumeration value=\"VIDEO\">\n     \
+        \       <annotation>\n              <documentation>\n                Identifies\
+        \ the campaign setting's video fields.\n              </documentation>\n \
+        \           </annotation>\n          </enumeration>\n          <enumeration\
+        \ value=\"IMAGE\">\n            <annotation>\n              <documentation>\n\
+        \                Identifies the campaign setting's image fields.\n       \
+        \       </documentation>\n            </annotation>\n          </enumeration>\n\
+        \        </restriction>\n      </simpleType>\n      <simpleType name=\"UrlError.Reason\"\
+        >\n        <annotation>\n          <documentation>\n            The reasons\
+        \ for the url error.\n          </documentation>\n        </annotation>\n\
+        \        <restriction base=\"xsd:string\">\n          <enumeration value=\"\
+        INVALID_TRACKING_URL_TEMPLATE\">\n            <annotation>\n             \
+        \ <documentation>\n                The tracking url template is invalid.\n\
+        \              </documentation>\n            </annotation>\n          </enumeration>\n\
+        \          <enumeration value=\"INVALID_TAG_IN_TRACKING_URL_TEMPLATE\">\n\
+        \            <annotation>\n              <documentation>\n               \
+        \ The tracking url template contains invalid tag.\n              </documentation>\n\
         \            </annotation>\n          </enumeration>\n          <enumeration\
         \ value=\"MISSING_TRACKING_URL_TEMPLATE_TAG\">\n            <annotation>\n\
         \              <documentation>\n                The tracking url template\
@@ -3725,34 +4218,36 @@ interactions:
         \ and has its own budget, bidding\n      strategy, serving date range, and\
         \ targeting settings (managed using\n      {@link CampaignCriterionService}).\
         \ You can also set campaign-wide ad\n      extensions using {@link CampaignExtensionSettingService}.\n\
-        \    </wsdl:documentation>\n    <wsdl:operation name=\"get\">\n      <wsdl:documentation>\n\
-        \        Returns the list of campaigns that meet the selector criteria.\n\
-        \        \n        @param serviceSelector the selector specifying the {@link\
-        \ Campaign}s to return.\n        @return A list of campaigns.\n        @throws\
-        \ ApiException if problems occurred while fetching campaign information.\n\
-        \      </wsdl:documentation>\n      <wsdl:input message=\"tns:getRequest\"\
-        \ name=\"getRequest\"/>\n      <wsdl:output message=\"tns:getResponse\" name=\"\
-        getResponse\"/>\n      <wsdl:fault message=\"tns:ApiException\" name=\"ApiException\"\
-        />\n    </wsdl:operation>\n    <wsdl:operation name=\"mutate\">\n      <wsdl:documentation>\n\
-        \        Adds, updates, or removes campaigns.\n        &lt;p class=\"note\"\
-        &gt;&lt;b&gt;Note:&lt;/b&gt; {@link CampaignOperation} does not support the\n\
-        \        &lt;code&gt;REMOVE&lt;/code&gt; operator. To remove a campaign, set\
-        \ its\n        {@link Campaign#status status} to {@code REMOVED}.&lt;/p&gt;\n\
-        \        @param operations A list of unique operations.\n        The same\
-        \ campaign cannot be specified in more than one operation.\n        @return\
-        \ The list of updated campaigns, returned in the same order as the\n     \
-        \   &lt;code&gt;operations&lt;/code&gt; array.\n        @throws ApiException\
-        \ if problems occurred while updating campaign information.\n      </wsdl:documentation>\n\
-        \      <wsdl:input message=\"tns:mutateRequest\" name=\"mutateRequest\"/>\n\
-        \      <wsdl:output message=\"tns:mutateResponse\" name=\"mutateResponse\"\
-        />\n      <wsdl:fault message=\"tns:ApiException\" name=\"ApiException\"/>\n\
-        \    </wsdl:operation>\n    <wsdl:operation name=\"mutateLabel\">\n      <wsdl:documentation>\n\
-        \        Adds labels to the {@linkplain Campaign campaign} or removes {@linkplain\
-        \ Label label}s from the\n        {@linkplain Campaign campaign}.\n      \
-        \  &lt;p&gt;Add - Apply an existing label to an existing {@linkplain Campaign\
-        \ campaign}. The\n        {@code campaignId} must reference an existing {@linkplain\
-        \ Campaign}. The {@code labelId} must\n        reference an existing {@linkplain\
-        \ Label label}.\n        &lt;p&gt;Remove - Removes the link between the specified\
+        \      \n      &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; CampaignService does not\
+        \ support video campaigns.&lt;/p&gt;\n    </wsdl:documentation>\n    <wsdl:operation\
+        \ name=\"get\">\n      <wsdl:documentation>\n        Returns the list of campaigns\
+        \ that meet the selector criteria.\n        \n        @param serviceSelector\
+        \ the selector specifying the {@link Campaign}s to return.\n        @return\
+        \ A list of campaigns.\n        @throws ApiException if problems occurred\
+        \ while fetching campaign information.\n      </wsdl:documentation>\n    \
+        \  <wsdl:input message=\"tns:getRequest\" name=\"getRequest\"/>\n      <wsdl:output\
+        \ message=\"tns:getResponse\" name=\"getResponse\"/>\n      <wsdl:fault message=\"\
+        tns:ApiException\" name=\"ApiException\"/>\n    </wsdl:operation>\n    <wsdl:operation\
+        \ name=\"mutate\">\n      <wsdl:documentation>\n        Adds, updates, or\
+        \ removes campaigns.\n        &lt;p class=\"note\"&gt;&lt;b&gt;Note:&lt;/b&gt;\
+        \ {@link CampaignOperation} does not support the\n        &lt;code&gt;REMOVE&lt;/code&gt;\
+        \ operator. To remove a campaign, set its\n        {@link Campaign#status\
+        \ status} to {@code REMOVED}.&lt;/p&gt;\n        @param operations A list\
+        \ of unique operations.\n        The same campaign cannot be specified in\
+        \ more than one operation.\n        @return The list of updated campaigns,\
+        \ returned in the same order as the\n        &lt;code&gt;operations&lt;/code&gt;\
+        \ array.\n        @throws ApiException if problems occurred while updating\
+        \ campaign information.\n      </wsdl:documentation>\n      <wsdl:input message=\"\
+        tns:mutateRequest\" name=\"mutateRequest\"/>\n      <wsdl:output message=\"\
+        tns:mutateResponse\" name=\"mutateResponse\"/>\n      <wsdl:fault message=\"\
+        tns:ApiException\" name=\"ApiException\"/>\n    </wsdl:operation>\n    <wsdl:operation\
+        \ name=\"mutateLabel\">\n      <wsdl:documentation>\n        Adds labels to\
+        \ the {@linkplain Campaign campaign} or removes {@linkplain Label label}s\
+        \ from the\n        {@linkplain Campaign campaign}.\n        &lt;p&gt;Add\
+        \ - Apply an existing label to an existing {@linkplain Campaign campaign}.\
+        \ The\n        {@code campaignId} must reference an existing {@linkplain Campaign}.\
+        \ The {@code labelId} must\n        reference an existing {@linkplain Label\
+        \ label}.\n        &lt;p&gt;Remove - Removes the link between the specified\
         \ {@linkplain Campaign campaign} and\n        {@linkplain Label label}.\n\
         \        \n        @param operations the operations to apply.\n        @return\
         \ a list of {@linkplain CampaignLabel}s where each entry in the list is the\
@@ -3811,7 +4306,7 @@ interactions:
         \ </wsdl:fault>\n    </wsdl:operation>\n  </wsdl:binding>\n  <wsdl:service\
         \ name=\"CampaignService\">\n    <wsdl:port binding=\"tns:CampaignServiceSoapBinding\"\
         \ name=\"CampaignServiceInterfacePort\">\n      <wsdlsoap:address location=\"\
-        https://adwords.google.com/api/adwords/cm/v201607/CampaignService\"/>\n  \
+        https://adwords.google.com/api/adwords/cm/v201609/CampaignService\"/>\n  \
         \  </wsdl:port>\n  </wsdl:service>\n</wsdl:definitions>\n"}
     headers:
       Accept-Ranges: [none]
@@ -3819,8 +4314,8 @@ interactions:
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml]
-      Date: ['Wed, 24 Aug 2016 10:15:52 GMT']
-      Expires: ['Wed, 24 Aug 2016 10:15:52 GMT']
+      Date: ['Tue, 13 Dec 2016 16:37:00 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:37:00 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]
@@ -3830,15 +4325,15 @@ interactions:
 - request:
     body: !!binary |
       PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48U09BUC1FTlY6RW52ZWxvcGUg
-      eG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1s
-      bnM6bnMwPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVsb3BlLyIgeG1sbnM6
-      U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxu
-      czpuczE9Imh0dHBzOi8vYWR3b3Jkcy5nb29nbGUuY29tL2FwaS9hZHdvcmRzL2NtL3YyMDE2MDci
-      IHhtbG5zOnRucz0iaHR0cHM6Ly9hZHdvcmRzLmdvb2dsZS5jb20vYXBpL2Fkd29yZHMvY20vdjIw
-      MTYwNyI+PFNPQVAtRU5WOkhlYWRlcj48dG5zOlJlcXVlc3RIZWFkZXI+PHRuczpjbGllbnRDdXN0
+      eG1sbnM6bnMxPSJodHRwczovL2Fkd29yZHMuZ29vZ2xlLmNvbS9hcGkvYWR3b3Jkcy9jbS92MjAx
+      NjA5IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNl
+      IiB4bWxuczp0bnM9Imh0dHBzOi8vYWR3b3Jkcy5nb29nbGUuY29tL2FwaS9hZHdvcmRzL2NtL3Yy
+      MDE2MDkiIHhtbG5zOlNPQVAtRU5WPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2Vu
+      dmVsb3BlLyIgeG1sbnM6bnMwPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVs
+      b3BlLyI+PFNPQVAtRU5WOkhlYWRlcj48dG5zOlJlcXVlc3RIZWFkZXI+PHRuczpjbGllbnRDdXN0
       b21lcklkPjQxMDAxNTYzMTI8L3RuczpjbGllbnRDdXN0b21lcklkPjx0bnM6ZGV2ZWxvcGVyVG9r
       ZW4+dUY3VEpHNW9hMGJEOU04aWcydjJTZzwvdG5zOmRldmVsb3BlclRva2VuPjx0bnM6dXNlckFn
-      ZW50PmFkd29yZHMtY2xpZW50IChBd0FwaS1QeXRob24sIGdvb2dsZWFkcy80LjMuMCwgUHl0aG9u
+      ZW50PmFkd29yZHMtY2xpZW50IChBd0FwaS1QeXRob24sIGdvb2dsZWFkcy80LjguMCwgUHl0aG9u
       LzMuNS4xKTwvdG5zOnVzZXJBZ2VudD48dG5zOnZhbGlkYXRlT25seT5mYWxzZTwvdG5zOnZhbGlk
       YXRlT25seT48dG5zOnBhcnRpYWxGYWlsdXJlPmZhbHNlPC90bnM6cGFydGlhbEZhaWx1cmU+PC90
       bnM6UmVxdWVzdEhlYWRlcj48L1NPQVAtRU5WOkhlYWRlcj48bnMwOkJvZHk+PG5zMTpnZXQ+PG5z
@@ -3859,7 +4354,7 @@ interactions:
       bnVtYmVyUmVzdWx0cz4xMDA8L25zMTpudW1iZXJSZXN1bHRzPjwvbnMxOnBhZ2luZz48L25zMTpz
       ZXJ2aWNlU2VsZWN0b3I+PC9uczE6Z2V0PjwvbnMwOkJvZHk+PC9TT0FQLUVOVjpFbnZlbG9wZT4=
     headers:
-      Authorization: [Bearer ya29.CjNJAyyX1GkeSHu7PgAmvs3I19EuKwAoeL11uASCMW7lskz6PFT8-xdNGTXmSAYNMTBGaT4]
+      Authorization: [Bearer ya29.CjOzAwYJCoNcZd9s29nsSLyedyF8yELSg-bmp3ug6Hpd4fsFBcK8PUtU5KzdxX5Xq2IjkqM]
       Connection: [close]
       Content-Length: ['1652']
       Content-Type: [text/xml; charset=utf-8]
@@ -3869,18 +4364,18 @@ interactions:
         IiI=
       User-Agent: [Python-urllib/3.5]
     method: POST
-    uri: https://adwords.google.com/api/adwords/cm/v201607/CampaignService
+    uri: https://adwords.google.com/api/adwords/cm/v201609/CampaignService
   response:
     body: {string: '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><ResponseHeader
-        xmlns="https://adwords.google.com/api/adwords/cm/v201607"><requestId>00053ace90f7d3e10a37aa0c060c4fe2</requestId><serviceName>CampaignService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>233</responseTime></ResponseHeader></soap:Header><soap:Body><getResponse
-        xmlns="https://adwords.google.com/api/adwords/cm/v201607"><rval><totalNumEntries>4</totalNumEntries><Page.Type>CampaignPage</Page.Type><entries><id>326250038</id><name>Campaign
-        #1</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20150925</startDate><endDate>20371230</endDate><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
+        xmlns="https://adwords.google.com/api/adwords/cm/v201609"><requestId>0005438cd46728300a37669571044542</requestId><serviceName>CampaignService</serviceName><methodName>get</methodName><operations>1</operations><responseTime>312</responseTime></ResponseHeader></soap:Header><soap:Body><getResponse
+        xmlns="https://adwords.google.com/api/adwords/cm/v201609"><rval><totalNumEntries>4</totalNumEntries><Page.Type>CampaignPage</Page.Type><entries><id>326250038</id><name>Campaign
+        #1</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20150925</startDate><endDate>20371230</endDate><budget></budget><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting"><Setting.Type>GeoTargetTypeSetting</Setting.Type><positiveGeoTargetType>DONT_CARE</positiveGeoTargetType><negativeGeoTargetType>DONT_CARE</negativeGeoTargetType></settings><advertisingChannelType>SEARCH</advertisingChannelType><campaignTrialType>BASE</campaignTrialType><baseCampaignId>326250038</baseCampaignId></entries><entries><id>384642878</id><name>Campaign
-        #2</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20160427</startDate><endDate>20371230</endDate><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
+        #2</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20160427</startDate><endDate>20371230</endDate><budget></budget><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting"><Setting.Type>GeoTargetTypeSetting</Setting.Type><positiveGeoTargetType>DONT_CARE</positiveGeoTargetType><negativeGeoTargetType>DONT_CARE</negativeGeoTargetType></settings><advertisingChannelType>SEARCH</advertisingChannelType><campaignTrialType>BASE</campaignTrialType><baseCampaignId>384642878</baseCampaignId></entries><entries><id>607924263</id><name>Campaign
-        #3</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20160608</startDate><endDate>20371230</endDate><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
+        #3</name><status>ENABLED</status><servingStatus>SERVING</servingStatus><startDate>20160608</startDate><endDate>20371230</endDate><budget></budget><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting"><Setting.Type>GeoTargetTypeSetting</Setting.Type><positiveGeoTargetType>DONT_CARE</positiveGeoTargetType><negativeGeoTargetType>DONT_CARE</negativeGeoTargetType></settings><advertisingChannelType>SEARCH</advertisingChannelType><campaignTrialType>BASE</campaignTrialType><baseCampaignId>607924263</baseCampaignId></entries><entries><id>608625354</id><name>Campaign
-        #4</name><status>PAUSED</status><servingStatus>SERVING</servingStatus><startDate>20160609</startDate><endDate>20371230</endDate><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
+        #4</name><status>PAUSED</status><servingStatus>SERVING</servingStatus><startDate>20160609</startDate><endDate>20371230</endDate><budget></budget><adServingOptimizationStatus>OPTIMIZE</adServingOptimizationStatus><settings
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting"><Setting.Type>GeoTargetTypeSetting</Setting.Type><positiveGeoTargetType>DONT_CARE</positiveGeoTargetType><negativeGeoTargetType>DONT_CARE</negativeGeoTargetType></settings><advertisingChannelType>SEARCH</advertisingChannelType><campaignTrialType>BASE</campaignTrialType><baseCampaignId>608625354</baseCampaignId></entries></rval></getResponse></soap:Body></soap:Envelope>'}
     headers:
       Accept-Ranges: [none]
@@ -3888,8 +4383,8 @@ interactions:
       Cache-Control: ['private, max-age=0']
       Connection: [close]
       Content-Type: [text/xml; charset=UTF-8]
-      Date: ['Wed, 24 Aug 2016 10:15:53 GMT']
-      Expires: ['Wed, 24 Aug 2016 10:15:53 GMT']
+      Date: ['Tue, 13 Dec 2016 16:37:01 GMT']
+      Expires: ['Tue, 13 Dec 2016 16:37:01 GMT']
       Server: [GSE]
       Vary: [Accept-Encoding]
       X-Content-Type-Options: [nosniff]
