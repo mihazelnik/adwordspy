@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='adwordspy',
-    version='0.3.0',
+    version='1.0.0',
     license='BSD',
     description='Adwords API wrapper',
     long_description='%s\n%s' % (
