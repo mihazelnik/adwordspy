@@ -65,7 +65,7 @@ setup(
         'adwords', 'api', 'wrapper', 'google'
     ],
     install_requires=[
-        'googleads==4.3.0',
+        'googleads==4.8.0',
     ],
     extras_require={
     },

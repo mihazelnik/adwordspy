@@ -19,7 +19,7 @@ class RetriesLimitException(Exception):
 
 class AdwordsAPI(object):
     def __init__(self, account_id, client_id, client_secret, refresh_token, developer_token,
-                 version='v201607', page_size=100, retries=3):
+                 version='v201609', page_size=100, retries=3):
         self.account_id = account_id
         self.client_id = client_id
         self.client_secret = client_secret
@@ -138,20 +138,20 @@ class AdwordsAPI(object):
         else:
             yield service.get(selector)
 
-    def get_accounts(self, fields=None, filters=None):
+    def get_accounts(self, fields=None, filters=None, manage_clients=False):
         """
         Get all adwords accounts associated with `account_id`
         Args:
             fields (list): list of fields you want to get for each account
-                           https://developers.google.com/adwords/api/docs/reference/v201605/ManagedCustomerService.ManagedCustomer
+                           https://developers.google.com/adwords/api/docs/reference/v201609/ManagedCustomerService.ManagedCustomer
             filters (list): list of filters you want to filter by
-                            https://developers.google.com/adwords/api/docs/reference/v201605/ManagedCustomerService.Predicate
+                            https://developers.google.com/adwords/api/docs/reference/v201609/ManagedCustomerService.Predicate
 
         Yields:
             adwords accounts
 
         Examples:
-            >>> get_accounts(fields=['CustomerId', 'Name'], filters=filters)
+            >>> get_accounts(fields=['CustomerId', 'Name'])
             filters = [
                 {
                     'field': 'Name',
@@ -165,7 +165,7 @@ class AdwordsAPI(object):
         name = 'ManagedCustomerService'
         if fields is None:
             # show all fields
-            fields = ['Name', 'CompanyName', 'CustomerId', 'CanManageClients', 'CurrencyCode',
+            fields = ['Name', 'CustomerId', 'CanManageClients', 'CurrencyCode',
                       'DateTimeZone', 'TestAccount', 'AccountLabels']
 
         selector = {'fields': fields}
@@ -174,7 +174,7 @@ class AdwordsAPI(object):
             {
                 'field': 'CanManageClients',
                 'operator': 'EQUALS',
-                'values': False,
+                'values': manage_clients,
             }
         ]
 
@@ -189,20 +189,20 @@ class AdwordsAPI(object):
         Get all campaigns from `account_id` adwords account
         Args:
             fields (list): list of fields you want to get for each campaign
-                           https://developers.google.com/adwords/api/docs/reference/v201605/CampaignService.Campaign
+                           https://developers.google.com/adwords/api/docs/reference/v201609/CampaignService.Campaign
             filters (list): list of filters you want to filter by
-                            https://developers.google.com/adwords/api/docs/reference/v201605/CampaignService.Predicate
+                            https://developers.google.com/adwords/api/docs/reference/v201609/CampaignService.Predicate
 
         Yields:
             campaigns
 
         Examples:
-            >>> get_campaigns(fields=['Id', 'Name', 'Status'], filters=filters)
+            >>> get_campaigns(fields=['Id', 'Name', 'Status'])
             filters = [
                 {
                     'field': 'Name',
                     'operator': 'EQUALS',
-                    'values': ['account #1'],
+                    'values': ['campaign #1'],
                 }
             ]
             >>> get_campaigns(filters=filters)
@@ -252,13 +252,37 @@ class AdwordsAPI(object):
 
     def get_adgroups(self, campaign_ids, fields=None, filters=None):
         """
-            Yields all ad groups from campaign_ids
+            Get all adgroups from `campaign_ids`
+            Args:
+                campaign_ids (list): list of campaign ids
+                fields (list): list of fields you want to get for each adgroup
+                               https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupService.AdGroup
+                filters (list): list of filters you want to filter by
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupService.Predicate
+
+            Yields:
+                adgroups
+
+            Examples:
+                >>> get_adgroups([1,2,3], fields=['Id', 'Name', 'Status'])
+                filters = [
+                    {
+                        'field': 'Name',
+                        'operator': 'EQUALS',
+                        'values': ['adgroup #1'],
+                    }
+                ]
+                >>> get_adgroups([1,2,3], filters=filters)
         """
+
         name = 'AdGroupService'
 
         if fields is None:
-            # default field
-            fields = ['Id']
+            # show all fields
+            fields = ['Id', 'CampaignId', 'CampaignName', 'Name', 'Status', 'Settings',
+                      'Labels', 'ContentBidCriterionTypeGroup',
+                      'BaseCampaignId', 'BaseAdGroupId', 'TrackingUrlTemplate',
+                      'UrlCustomParameters']
 
         selector = {'fields': fields}
 
@@ -279,7 +303,18 @@ class AdwordsAPI(object):
 
     def get_adgroups_by_status(self, campaign_ids, fields=None, statuses=None):
         """
-            Yields all ad groups from campaign_ids
+            Get adgrups from `campaign_ids` based on statuses
+            Args:
+                campaign_ids (list): list of campaign ids
+                fields (list): list of fields you want to get for each adgroup
+                statuses (list): list of statuses (PAUSED, ENABLED, ...)
+
+            Yields:
+                adgroups
+
+            Examples:
+                This example will return only adgroups which have status PAUSED
+                >>> get_adgroups_by_status([1,2,3], statuses=['PAUSED'])
         """
         filters = None
         if statuses:
@@ -293,12 +328,30 @@ class AdwordsAPI(object):
 
         return self.get_adgroups(campaign_ids, fields=fields, filters=filters)
 
-    def get_ads(self, adgroup_ids, types=None, fields=None, filters=None):
+    def get_ads(self, adgroup_ids, types=None, filters=None):
+        """
+            Get all ads from `adgroup_ids`
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                filters (list): list of filters you want to filter by
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupAdService.Predicate
+
+            Yields:
+                ads
+
+            Examples:
+                filters = [
+                    {
+                        'field': 'id',
+                        'operator': 'EQUALS',
+                        'values': [123456],
+                    }
+                ]
+                >>> get_ads([1,2,3], filters=filters)
+        """
         name = 'AdGroupAdService'
 
-        if fields is None:
-            # default field
-            fields = ['Id']
+        fields = ['Id']
 
         selector = {'fields': fields}
 
@@ -326,12 +379,32 @@ class AdwordsAPI(object):
 
         return self.get_custom_service(name, selector)
 
-    def get_text_ads(self, adgroup_ids, fields=None, filters=None):
-        return self.get_ads(adgroup_ids, types=['TEXT_AD'], fields=fields, filters=filters)
-
-    def get_text_ads_by_status(self, adgroup_ids, fields=None, statuses=None):
+    def get_text_ads(self, adgroup_ids, filters=None):
         """
-            Yields all ad groups from campaign_ids
+            Get all text ads from `adgroup_ids`
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                filters (list): list of filters you want to filter by
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupAdService.Predicate
+
+            Yields:
+                text ads
+        """
+        return self.get_ads(adgroup_ids, types=['TEXT_AD'], filters=filters)
+
+    def get_text_ads_by_status(self, adgroup_ids, statuses=None):
+        """
+            Get text ads from `adgroup_ids` based on statuses
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                statuses (list): list of statuses (PAUSED, ENABLED, ...)
+
+            Yields:
+                text ads
+
+            Examples:
+                This example will return only text ads which have status PAUSED
+                >>> get_text_ads_by_status([1,2,3], statuses=['PAUSED'])
         """
         filters = None
         if statuses:
@@ -343,15 +416,33 @@ class AdwordsAPI(object):
                 }
             ]
 
-        return self.get_text_ads(adgroup_ids, fields=fields, filters=filters)
+        return self.get_text_ads(adgroup_ids, filters=filters)
 
-    def get_keywords(self, adgroup_ids, fields=None, filters=None):
+    def get_keywords(self, adgroup_ids, filters=None):
+        """
+            Get all keywords from `adgroup_ids`
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                filters (list): list of filters you want to filter by
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupCriterionService.Keyword
+
+            Yields:
+                keywords
+
+            Examples:
+                filters = [
+                    {
+                        'field': 'id',
+                        'operator': 'EQUALS',
+                        'values': [123456],
+                    }
+                ]
+                >>> get_keywords([1,2,3], filters=filters)
+        """
 
         name = 'AdGroupCriterionService'
 
-        if fields is None:
-            # default field
-            fields = ['Id']
+        fields = ['Id']
 
         selector = {'fields': fields}
 
@@ -380,7 +471,47 @@ class AdwordsAPI(object):
 
         return self.get_custom_service(name, selector)
 
-    def get_keywords_by_status(self, adgroup_ids, fields=None, statuses=None):
+    def get_keywords_by_match_type(self, adgroup_ids, match_types=None):
+        """
+            Get all keywords from `adgroup_ids` based on match_types
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                match_types (list): list of match types (BROAD, PHRASE, EXACT)
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupCriterionService.Keyword
+
+            Yields:
+                keywords
+
+            Examples:
+                >>> get_keywords_by_match_type([1,2,3], match_types=['BROAD'])
+        """
+
+        filters = None
+        if match_types:
+            filters = [
+                {
+                    'field': 'KeywordMatchType',
+                    'operator': 'IN',
+                    'values': match_types,
+                }
+            ]
+
+        return self.get_keywords(adgroup_ids, filters=filters)
+
+    def get_keywords_by_status(self, adgroup_ids, statuses=None):
+        """
+            Get all keywords from `adgroup_ids` based on statuses
+            Args:
+                adgroup_ids (list): list of adgroup ids
+                statuses (list): list of statuses (PAUSED, ENABLED, ...)
+                                https://developers.google.com/adwords/api/docs/reference/v201609/AdGroupCriterionService.Keyword
+
+            Yields:
+                keywords
+
+            Examples:
+                >>> get_keywords_by_status([1,2,3], match_types=['PAUSED'])
+        """
 
         filters = None
         if statuses:
@@ -392,7 +523,7 @@ class AdwordsAPI(object):
                 }
             ]
 
-        return self.get_keywords(adgroup_ids, fields=fields, filters=filters)
+        return self.get_keywords(adgroup_ids, filters=filters)
 
     def set_adgroup_status(self, adgroup_id, status):
 
@@ -453,13 +584,17 @@ class AdwordsAPI(object):
     def get_campaigns_changes(self, campaign_ids, start_date, end_date):
         """
             Get all changes for campaigns
+
+            Args:
+                campaign_ids (list): list of campaign ids
+                start_date (str): date format %Y%m%d %H%M%S
+                end_date (str): date format %Y%m%d %H%M%S
+
+            Example:
+                datetime.today().strftime('%Y%m%d %H%M%S')
         """
 
         name = 'CustomerSyncService'
-
-        # TODO REMOVE!!!
-        end_date = datetime.today().strftime('%Y%m%d %H%M%S')
-        start_date = (datetime.today() - timedelta(1)).strftime('%Y%m%d %H%M%S')
 
         selector = {
             'dateTimeRange': {
