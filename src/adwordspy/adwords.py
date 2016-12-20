@@ -16,7 +16,7 @@ class RetriesLimitException(Exception):
 
 class AdwordsAPI(object):
     def __init__(self, account_id, client_id, client_secret, refresh_token, developer_token,
-                 version='v201609', page_size=100, retries=3):
+                 version='v201609', page_size=100, retries=3, timesleep=True):
         self.account_id = account_id
         self.client_id = client_id
         self.client_secret = client_secret
@@ -27,6 +27,7 @@ class AdwordsAPI(object):
         self.version = version
         self.page_size = page_size
         self.retries = retries
+        self.timesleep = timesleep
 
     def _make_client(self):
         """
@@ -77,9 +78,11 @@ class AdwordsAPI(object):
                 for error in errors:
                     if error['ApiError.Type'] == 'InternalApiError':
                         tries += 1
-                        time.sleep(2 ** tries)
+                        if self.timesleep:
+                            time.sleep(2 ** tries)
                     elif error['ApiError.Type'] == 'RateExceededError':
-                        time.sleep(int(error['retryAfterSeconds']))
+                        if self.timesleep:
+                            time.sleep(int(error['retryAfterSeconds']))
                     else:
                         raise e
 
@@ -110,9 +113,11 @@ class AdwordsAPI(object):
                             tries += self.retries - 1
                         elif error['ApiError.Type'] == 'InternalApiError':
                             tries += 1
-                            time.sleep(2 ** tries)
+                            if self.timesleep:
+                                time.sleep(2 ** tries)
                         elif error['ApiError.Type'] == 'RateExceededError':
-                            time.sleep(int(error['retryAfterSeconds']))
+                            if self.timesleep:
+                                time.sleep(int(error['retryAfterSeconds']))
                         else:
                             raise e
             if tries > self.retries:
